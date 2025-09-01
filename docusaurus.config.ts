@@ -10,11 +10,12 @@ const config: Config = {
 
   // GitHub Pages URL
   url: 'https://o2-ui.github.io',
-  baseUrl: '/o2-ui/',
+  baseUrl: '/',
 
   // GitHub 설정
   organizationName: 'o2-ui', // GitHub 사용자 또는 조직명
-  projectName: 'o2-ui', // 레포 이름
+  projectName: 'o2-ui.github.io',
+  deploymentBranch: 'main',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
