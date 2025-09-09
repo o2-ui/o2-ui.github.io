@@ -15,7 +15,7 @@ const config: Config = {
   // GitHub 설정
   organizationName: 'o2-ui', // GitHub 사용자 또는 조직명
   projectName: 'o2-ui.github.io',
-  deploymentBranch: 'main',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
