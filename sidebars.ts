@@ -4,10 +4,10 @@ const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     {
       type: 'category',
-      label: 'react-icon',
+      label: 'carmore-icon',
       collapsible: true,
       collapsed: false,
-      items: ['react-icon/overview', 'react-icon/installation'],
+      items: ['carmore-icon/overview', 'carmore-icon/installation'],
     },
   ],
 };

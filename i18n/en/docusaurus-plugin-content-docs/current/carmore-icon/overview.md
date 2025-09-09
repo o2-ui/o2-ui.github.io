@@ -5,11 +5,11 @@ title: Overview
 
 # Overview
 
-`@o2-ui/react-icon` is more than a set of visual components; it is designed so that users, search engines, crawlers, AI agents, and assistive technologies can all extract meaningful information from web documents.
+`@o2-ui/carmore-icon` is more than a set of visual components; it is designed so that users, search engines, crawlers, AI agents, and assistive technologies can all extract meaningful information from web documents.
 
 ## Core Philosophy
 
-While most icon libraries primarily focus on visual presentation, `@o2-ui/react-icon` equally emphasizes semantic accessibility and machine readability. Each SVG element comes with built-in accessibility attributes such as ARIA, allowing developers to produce semantically rich documents with minimal effort. As a result, applications using this library automatically deliver content that is not only visually appealing but also structured, interpretable, and inclusive for every agent interacting with the web.
+While most icon libraries primarily focus on visual presentation, `@o2-ui/carmore-icon` equally emphasizes semantic accessibility and machine readability. Each SVG element comes with built-in accessibility attributes such as ARIA, allowing developers to produce semantically rich documents with minimal effort. As a result, applications using this library automatically deliver content that is not only visually appealing but also structured, interpretable, and inclusive for every agent interacting with the web.
 
 ## Key Features
 
@@ -20,7 +20,7 @@ While most icon libraries primarily focus on visual presentation, `@o2-ui/react-
 
 ## How It Works
 
-`@o2-ui/react-icon` provides the following advantages, optimized for SSR, lightweight design, and accessibility:
+`@o2-ui/carmore-icon` provides the following advantages, optimized for SSR, lightweight design, and accessibility:
 
 - **SSR Enabled**: As React components, icons can be server-rendered into HTML, improving initial load performance and SEO. Accessibility attributes remain intact in the server-rendered output.
 - **Lightweight by Design**: Only necessary SVG icons are included, minimizing bundle size and eliminating unused code.
@@ -29,4 +29,4 @@ While most icon libraries primarily focus on visual presentation, `@o2-ui/react-
 
 ---
 
-`@o2-ui/react-icon` is not just a toolkit for rendering icons but an enterprise-grade UI component library that enriches the semantic layer of the web.
+`@o2-ui/carmore-icon` is not just a toolkit for rendering icons but an enterprise-grade UI component library that enriches the semantic layer of the web.
