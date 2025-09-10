@@ -72,24 +72,30 @@ _아래 카드들을 클릭하면 각 아이콘의 상세 페이지로 이동합
       </Flex>
     </OverviewBox>
   </Link>
-  <OverviewBox>
-    <Flex direction="column" gap="0.5rem" alignItems="center">
-      <CarmoreIcon width={60} height={60} icon="check" />
-      <p className="iconLabel">check</p>
-    </Flex>
-  </OverviewBox>
-  <OverviewBox>
-    <Flex direction="column" gap="0.5rem" alignItems="center">
-      <CarmoreIcon width={60} height={60} icon="copy" />
-      <p className="iconLabel">copy</p>
-    </Flex>
-  </OverviewBox>
-  <OverviewBox>
-    <Flex direction="column" gap="0.5rem" alignItems="center">
-      <CarmoreIcon width={60} height={60} icon="copy-link" />
-      <p className="iconLabel">copy-link</p>
-    </Flex>
-  </OverviewBox>
+  <Link className={'overviewLink'} to={'/docs/carmore-icon/icons/check'}>
+    <OverviewBox>
+      <Flex direction="column" gap="0.5rem" alignItems="center">
+        <CarmoreIcon width={60} height={60} icon="check" />
+        <p className="iconLabel">check</p>
+      </Flex>
+    </OverviewBox>
+  </Link>
+  <Link className={'overviewLink'} to={'/docs/carmore-icon/icons/copy'}>
+    <OverviewBox>
+      <Flex direction="column" gap="0.5rem" alignItems="center">
+        <CarmoreIcon width={60} height={60} icon="copy" />
+        <p className="iconLabel">copy</p>
+      </Flex>
+    </OverviewBox>
+  </Link>
+  <Link className={'overviewLink'} to={'/docs/carmore-icon/icons/copy-link'}>
+    <OverviewBox>
+      <Flex direction="column" gap="0.5rem" alignItems="center">
+        <CarmoreIcon width={60} height={60} icon="copy-link" />
+        <p className="iconLabel">copy-link</p>
+      </Flex>
+    </OverviewBox>
+  </Link>
   <OverviewBox>
     <Flex direction="column" gap="0.5rem" alignItems="center">
       <CarmoreIcon width={60} height={60} icon="country-flag-ae" />
@@ -516,12 +522,14 @@ _아래 카드들을 클릭하면 각 아이콘의 상세 페이지로 이동합
       <p className={'iconLabel'}>country-flag-za</p>
     </Flex>
   </OverviewBox>
-  <OverviewBox>
-    <Flex direction={'column'} gap={'0.5rem'} alignItems={'center'}>
-      <CarmoreIcon width={60} height={60} icon={'cs'} />
-      <p className={'iconLabel'}>cs</p>
-    </Flex>
-  </OverviewBox>
+  <Link className={'overviewLink'} to={'/docs/carmore-icon/icons/cs'}>
+    <OverviewBox>
+      <Flex direction={'column'} gap={'0.5rem'} alignItems={'center'}>
+        <CarmoreIcon width={60} height={60} icon={'cs'} />
+        <p className={'iconLabel'}>cs</p>
+      </Flex>
+    </OverviewBox>
+  </Link>
   <OverviewBox>
     <Flex direction={'column'} gap={'0.5rem'} alignItems={'center'}>
       <CarmoreIcon width={60} height={60} icon={'download'} />
