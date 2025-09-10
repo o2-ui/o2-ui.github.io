@@ -64,12 +64,14 @@ _아래 카드들을 클릭하면 각 아이콘의 상세 페이지로 이동합
       </Flex>
     </OverviewBox>
   </Link>
-  <OverviewBox>
-    <Flex direction="column" gap="0.5rem" alignItems="center">
-      <CarmoreIcon width={60} height={60} icon="chat" />
-      <p className="iconLabel">chat</p>
-    </Flex>
-  </OverviewBox>
+  <Link className={'overviewLink'} to={'/docs/carmore-icon/icons/chat'}>
+    <OverviewBox>
+      <Flex direction="column" gap="0.5rem" alignItems="center">
+        <CarmoreIcon width={60} height={60} icon="chat" />
+        <p className="iconLabel">chat</p>
+      </Flex>
+    </OverviewBox>
+  </Link>
   <OverviewBox>
     <Flex direction="column" gap="0.5rem" alignItems="center">
       <CarmoreIcon width={60} height={60} icon="check" />
