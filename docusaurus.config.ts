@@ -20,12 +20,6 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // i18n 설정
-  i18n: {
-    defaultLocale: 'ko',
-    locales: ['ko', 'en'],
-  },
-
   themeConfig: {
     navbar: {
       items: [
