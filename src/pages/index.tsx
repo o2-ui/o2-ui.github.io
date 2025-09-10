@@ -14,7 +14,7 @@ export default function Home(): ReactElement {
           <h1 className="hero__title">o2-ui</h1>
           <p className="hero__subtitle">React 기반 UI 컴포넌트 라이브러리 문서</p>
           <div className={styles.buttons}>
-            <Link className="button button--primary button--lg" to="/docs/react-icon/overview">
+            <Link className="button button--primary button--lg" to="/docs/carmore-icon/overview">
               Get Started
             </Link>
           </div>

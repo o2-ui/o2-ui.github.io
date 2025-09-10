@@ -1,0 +1,12 @@
+.layout {
+  border-radius: var(--ifm-pagination-nav-border-radius);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  margin: 0;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 100%;
+  height: fit-content;
+}
