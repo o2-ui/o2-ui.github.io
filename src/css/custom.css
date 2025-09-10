@@ -40,11 +40,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
 
-.iconLabel {
-  margin: 0;
-  font-size: 0.85rem;
-}
-
 .textPrimary {
   color: var(--ifm-color-primary);
 }
@@ -71,4 +66,22 @@
 
 .textOrange {
   color: orange;
+}
+
+.iconLabel {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.overviewLink {
+  color: var(--ifm-font-color-base);
+  transition:
+    transform 300ms ease,
+    color 300ms ease;
+
+  &:hover {
+    transform: scale(102%);
+    color: var(--ifm-color-primary);
+    text-decoration: none;
+  }
 }
