@@ -108,7 +108,7 @@ const sidebars: SidebarsConfig = {
             // 'carmore-icon/icons/refresh',
             // 'carmore-icon/icons/reply',
             // 'carmore-icon/icons/search',
-            // 'carmore-icon/icons/setting',
+            'carmore-icon/icons/setting',
             'carmore-icon/icons/share',
             'carmore-icon/icons/stepper-minus',
             'carmore-icon/icons/stepper-plus',
