@@ -113,7 +113,7 @@ const sidebars: SidebarsConfig = {
             // 'carmore-icon/icons/stepper-minus',
             // 'carmore-icon/icons/stepper-plus',
             // 'carmore-icon/icons/switch-arrow',
-            // 'carmore-icon/icons/thumb-up',
+            'carmore-icon/icons/thumb-up',
             'carmore-icon/icons/user',
           ],
         },
