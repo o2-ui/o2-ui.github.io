@@ -1,0 +1,40 @@
+.layout {
+  border-radius: var(--ifm-pagination-nav-border-radius);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  margin: 0;
+  padding: 2rem;
+  background-color: transparent;
+  width: 100%;
+  height: fit-content;
+}
+
+.hover {
+  transition: color 150ms ease;
+  &:hover {
+    border: 1px solid var(--ifm-color-primary-lightest);
+  }
+}
+
+.padding1rem {
+  padding: 1rem;
+}
+
+.padding2rem {
+  padding: 2rem;
+}
+
+.padding3rem {
+  padding: 3rem;
+}
+
+.padding4rem {
+  padding: 4rem;
+}
+
+.widthFull {
+  width: 100%;
+}
+
+.heightFull {
+  height: 100%;
+}

@@ -1,5 +1,9 @@
 @import '@o2-ui/carmore-icon/index.css';
 
+[class^='o2-ui-carmore-icon-'] {
+  color: #999;
+}
+
 * {
   box-sizing: border-box;
   border: none;
@@ -66,11 +70,6 @@
 
 .textOrange {
   color: orange;
-}
-
-.iconLabel {
-  margin: 0;
-  font-size: 0.85rem;
 }
 
 .overviewLink {
