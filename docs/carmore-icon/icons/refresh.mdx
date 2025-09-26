@@ -1,6 +1,6 @@
 ---
-id: chat
-title: Chat
+id: refresh
+title: Refresh
 ---
 
 import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
@@ -9,11 +9,11 @@ import A11yCompareList from '@site/src/organisms/carmore-icon/A11yCompareList';
 import ColorCompareList from '@site/src/organisms/carmore-icon/ColorCompareList';
 import SizeCompareList from '@site/src/organisms/carmore-icon/SizeCompareList';
 
-# Chat
+# Refresh
 
 <br />
 
-<IconProfile icon={'chat'} />
+<IconProfile icon={'refresh'} />
 
 ## 사용법
 
@@ -22,7 +22,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 
 // ...
 
-  <CarmoreIcon icon={'chat'} ... />
+  <CarmoreIcon icon={'refresh'} ... />
 
 // ...
 ```
@@ -39,13 +39,13 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 - `width` 의 기본값은 '1.5rem' 입니다.
 - `height` 의 기본값은 '1.5rem' 입니다.
 
-<SizeCompareList icon={'chat'} sizes={['1.5rem', 30, '48px', '5rem']} />
+<SizeCompareList icon={'refresh'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'chat'} ... /> // 기본값('1.5rem') 적용
-<CarmoreIcon icon={'chat'} width={30} height={30} ... />
-<CarmoreIcon icon={'chat'} width={'48px'} height={'48px'} ... />
-<CarmoreIcon icon={'chat'} width={'5rem'} height={'5rem'} ... />
+<CarmoreIcon icon={'refresh'} ... /> // 기본값('1.5rem') 적용
+<CarmoreIcon icon={'refresh'} width={30} height={30} ... />
+<CarmoreIcon icon={'refresh'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'refresh'} width={'5rem'} height={'5rem'} ... />
 ```
 
 <br />
@@ -55,7 +55,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 
 `className`을 통해 텍스트 색상(color)을 지정하면 아이콘의 색상이 변경됩니다.
 
-<ColorCompareList icon={'chat'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+<ColorCompareList icon={'refresh'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
 
 ```css
 .text-red {
@@ -80,11 +80,11 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 ```
 
 ```tsx
-<CarmoreIcon icon={'chat'} className={'text-red'} ... />
-<CarmoreIcon icon={'chat'} className={'text-orange'} ... />
-<CarmoreIcon icon={'chat'} className={'text-green'}  ... />
-<CarmoreIcon icon={'chat'} className={'text-blue'}  ... />
-<CarmoreIcon icon={'chat'} className={'text-purple'}  ... />
+<CarmoreIcon icon={'refresh'} className={'text-red'} ... />
+<CarmoreIcon icon={'refresh'} className={'text-orange'} ... />
+<CarmoreIcon icon={'refresh'} className={'text-green'}  ... />
+<CarmoreIcon icon={'refresh'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'refresh'} className={'text-purple'}  ... />
 ```
 
 <br />
@@ -95,14 +95,14 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 `role`, `aria-label` 등의 속성을 설정하는 것을 권장합니다.
 
 - `role` 의 기본값은 'img' 입니다.
-- `aria-label` 의 기본값은 '채팅하기' 입니다.
+- `aria-label` 의 기본값은 '새로고침' 입니다.
 - 기본 접근성 속성이 적용되어 있지만, 필요에 따라 커스터마이징할 수 있습니다.
 - _(아이콘에 마우스를 올려보세요.)_
 
-<A11yCompareList icon={'chat'} ariaLabels={[undefined, '말풍선', '문자 전송']} />
+<A11yCompareList icon={'refresh'} ariaLabels={[undefined, '화살표', '리로드']} />
 
 ```tsx
-<CarmoreIcon icon={'chat'} ... /> // 기본값('채팅하기') 적용
-<CarmoreIcon icon={'chat'} aria-label={'말풍선'} ... />
-<CarmoreIcon icon={'chat'} aria-label={'문자 전송'} ... />
+<CarmoreIcon icon={'refresh'} ... /> // 기본값('새로고침') 적용
+<CarmoreIcon icon={'refresh'} aria-label={'화살표'} ... />
+<CarmoreIcon icon={'refresh'} aria-label={'리로드'} ... />
 ```

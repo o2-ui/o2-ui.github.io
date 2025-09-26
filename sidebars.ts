@@ -105,7 +105,7 @@ const sidebars: SidebarsConfig = {
             'carmore-icon/icons/nowhere',
             'carmore-icon/icons/out-link',
             'carmore-icon/icons/pin-map',
-            // 'carmore-icon/icons/refresh',
+            'carmore-icon/icons/refresh',
             'carmore-icon/icons/reply',
             'carmore-icon/icons/search',
             'carmore-icon/icons/setting',
