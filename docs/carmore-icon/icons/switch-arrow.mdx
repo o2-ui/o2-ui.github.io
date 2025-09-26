@@ -1,6 +1,6 @@
 ---
-id: copy
-title: Copy
+id: switch-arrow
+title: SwitchArrow
 ---
 
 import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
@@ -9,11 +9,11 @@ import A11yCompareList from '@site/src/organisms/carmore-icon/A11yCompareList';
 import ColorCompareList from '@site/src/organisms/carmore-icon/ColorCompareList';
 import SizeCompareList from '@site/src/organisms/carmore-icon/SizeCompareList';
 
-# Copy
+# SwitchArrow
 
 <br />
 
-<IconProfile icon={'copy'} />
+<IconProfile icon={'switch-arrow'} />
 
 ## 사용법
 
@@ -22,7 +22,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 
 // ...
 
-  <CarmoreIcon icon={'copy'} ... />
+  <CarmoreIcon icon={'switch-arrow'} ... />
 
 // ...
 ```
@@ -39,13 +39,13 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 - `width` 의 기본값은 '1.5rem' 입니다.
 - `height` 의 기본값은 '1.5rem' 입니다.
 
-<SizeCompareList icon={'copy'} sizes={['1.5rem', 30, '48px', '5rem']} />
+<SizeCompareList icon={'switch-arrow'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'copy'} ... /> // 기본값('1.5rem') 적용
-<CarmoreIcon icon={'copy'} width={30} height={30} ... />
-<CarmoreIcon icon={'copy'} width={'48px'} height={'48px'} ... />
-<CarmoreIcon icon={'copy'} width={'5rem'} height={'5rem'} ... />
+<CarmoreIcon icon={'switch-arrow'} ... /> // 기본값('1.5rem') 적용
+<CarmoreIcon icon={'switch-arrow'} width={30} height={30} ... />
+<CarmoreIcon icon={'switch-arrow'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'switch-arrow'} width={'5rem'} height={'5rem'} ... />
 ```
 
 <br />
@@ -55,7 +55,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 
 `className`을 통해 텍스트 색상(color)을 지정하면 아이콘의 색상이 변경됩니다.
 
-<ColorCompareList icon={'copy'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+<ColorCompareList icon={'switch-arrow'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
 
 ```css
 .text-red {
@@ -80,11 +80,11 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 ```
 
 ```tsx
-<CarmoreIcon icon={'copy'} className={'text-red'} ... />
-<CarmoreIcon icon={'copy'} className={'text-orange'} ... />
-<CarmoreIcon icon={'copy'} className={'text-green'}  ... />
-<CarmoreIcon icon={'copy'} className={'text-blue'}  ... />
-<CarmoreIcon icon={'copy'} className={'text-purple'}  ... />
+<CarmoreIcon icon={'switch-arrow'} className={'text-red'} ... />
+<CarmoreIcon icon={'switch-arrow'} className={'text-orange'} ... />
+<CarmoreIcon icon={'switch-arrow'} className={'text-green'}  ... />
+<CarmoreIcon icon={'switch-arrow'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'switch-arrow'} className={'text-purple'}  ... />
 ```
 
 <br />
@@ -95,14 +95,14 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 `role`, `aria-label` 등의 속성을 설정하는 것을 권장합니다.
 
 - `role` 의 기본값은 'img' 입니다.
-- `aria-label` 의 기본값은 '복사하기' 입니다.
+- `aria-label` 의 기본값은 '교체하기' 입니다.
 - 기본 접근성 속성이 적용되어 있지만, 필요에 따라 커스터마이징할 수 있습니다.
 - _(아이콘에 마우스를 올려보세요.)_
 
-<A11yCompareList icon={'copy'} ariaLabels={[undefined, '클립보드', '내용 복사']} />
+<A11yCompareList icon={'switch-arrow'} ariaLabels={[undefined, '교환하기', '변경하기']} />
 
 ```tsx
-<CarmoreIcon icon={'copy'} ... /> // 기본값('복사하기') 적용
-<CarmoreIcon icon={'copy'} aria-label={'클립보드'} ... />
-<CarmoreIcon icon={'copy'} aria-label={'내용 복사'} ... />
+<CarmoreIcon icon={'switch-arrow'} ... /> // 기본값('교체하기') 적용
+<CarmoreIcon icon={'switch-arrow'} aria-label={'교환하기'} ... />
+<CarmoreIcon icon={'switch-arrow'} aria-label={'변경하기'} ... />
 ```
