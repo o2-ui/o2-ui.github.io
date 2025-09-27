@@ -27,7 +27,7 @@ const sidebars: SidebarsConfig = {
             'carmore-icon/icons/check',
             'carmore-icon/icons/copy',
             'carmore-icon/icons/copy-link',
-            // 'carmore-icon/icons/country-flag-ae',
+            'carmore-icon/icons/country-flag-ae',
             // 'carmore-icon/icons/country-flag-al',
             // 'carmore-icon/icons/country-flag-ar',
             // 'carmore-icon/icons/country-flag-at',
