@@ -13,7 +13,7 @@ const PropsListWrapper = (props: Props) => {
   const { gap = '3rem', children } = props;
 
   return (
-    <Box>
+    <Box bgColor={'gray-10'}>
       <Flex direction={'row'} gap={gap} alignItems={'center'} justifyContent={'center'}>
         {children}
       </Flex>

@@ -38,3 +38,23 @@
 .heightFull {
   height: 100%;
 }
+
+.bgTransparent {
+  background-color: transparent;
+}
+
+.bgGray10 {
+  background-color: var(--color-gray-10);
+}
+
+.bgGray20 {
+  background-color: var(--color-gray-20);
+}
+
+.bgLightGray10 {
+  background-color: var(--color-light-gray-10);
+}
+
+.bgLightGray30 {
+  background-color: var(--color-light-gray-30);
+}

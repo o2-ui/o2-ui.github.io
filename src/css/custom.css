@@ -1,9 +1,3 @@
-@import '@o2-ui/carmore-icon/index.css';
-
-[class^='o2-ui-carmore-icon-'] {
-  color: #999;
-}
-
 * {
   box-sizing: border-box;
   border: none;
@@ -26,6 +20,26 @@
 
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --color-gray-90: #333333;
+  --color-gray-80: #494949;
+  --color-gray-70: #666666;
+  --color-gray-60: #999999;
+  --color-gray-50: #d4d4d4;
+  --color-gray-40: #e9e9e9;
+  --color-gray-30: #f3f3f3;
+  --color-gray-20: #f8f8f8;
+  --color-gray-10: #f8f8f8;
+
+  --color-light-gray-90: #59647a;
+  --color-light-gray-80: #6b7897;
+  --color-light-gray-70: #7b8bab;
+  --color-light-gray-60: #95a6bf;
+  --color-light-gray-50: #a4b5ce;
+  --color-light-gray-40: #b3c4dd;
+  --color-light-gray-30: #d2dbeb;
+  --color-light-gray-20: #e6eaf4;
+  --color-light-gray-10: #f1f4f9;
 }
 
 [data-theme='dark'] {
@@ -42,45 +56,24 @@
   --ifm-color-grey-alpha-300: #dedede55;
 
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
-}
 
-.textPrimary {
-  color: var(--ifm-color-primary);
-}
+  --color-gray-90: #f3f3f3;
+  --color-gray-80: #dcdcdc;
+  --color-gray-70: #b5b5b5;
+  --color-gray-60: #999999;
+  --color-gray-50: #666666;
+  --color-gray-40: #4d4d4d;
+  --color-gray-30: #3a3a3a;
+  --color-gray-20: #2b2b2b;
+  --color-gray-10: #1e1e1e;
 
-.textPrimaryLight {
-  color: var(--ifm-color-primary-light);
-}
-
-.textRed {
-  color: red;
-}
-
-.textGreen {
-  color: green;
-}
-
-.textBlue {
-  color: #0d6ffc;
-}
-
-.textPurple {
-  color: purple;
-}
-
-.textOrange {
-  color: orange;
-}
-
-.overviewLink {
-  color: var(--ifm-font-color-base);
-  transition:
-    transform 300ms ease,
-    color 300ms ease;
-
-  &:hover {
-    transform: scale(102%);
-    color: var(--ifm-color-primary);
-    text-decoration: none;
-  }
+  --color-light-gray-90: #cdd5e5;
+  --color-light-gray-80: #b5c0d9;
+  --color-light-gray-70: #9faeca;
+  --color-light-gray-60: #899bbd;
+  --color-light-gray-50: #7288af;
+  --color-light-gray-40: #5a729a;
+  --color-light-gray-30: #465a7c;
+  --color-light-gray-20: #334163;
+  --color-light-gray-10: #242d45;
 }

@@ -14,7 +14,7 @@ const IconProfile = (props: Props) => {
   const { icon } = props;
 
   return (
-    <Box fullWidth padding={'4rem'}>
+    <Box fullWidth padding={'4rem'} bgColor={'gray-10'}>
       <Flex fullWidth alignItems={'center'} justifyContent={'center'}>
         <CarmoreIcon icon={icon} width={'15rem'} height={'15rem'} />
       </Flex>

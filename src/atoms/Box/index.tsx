@@ -23,23 +23,43 @@ const getPaddingClass = (padding?: PaddingType) => {
   }
 };
 
+type BgColorType = 'transparent' | 'gray-10' | 'gray-20' | 'light-gray-10' | 'light-gray-30';
+
+const getBgColorClass = (bgColor: BgColorType) => {
+  switch (bgColor) {
+    case 'gray-10':
+      return style['bgGray10'];
+    case 'gray-20':
+      return style['bgGray20'];
+    case 'light-gray-10':
+      return style['bgLightGray10'];
+    case 'light-gray-30':
+      return style['bgLightGray30'];
+    case 'transparent':
+    default:
+      return style['bgTransparent'];
+  }
+};
+
 interface Props extends ComponentProps<'div'> {
   padding?: PaddingType;
+  bgColor?: BgColorType;
   fullWidth?: boolean;
   fullHeight?: boolean;
   hoverEffect?: boolean;
 }
 
 const Box = (props: Props) => {
-  const { children, className, padding = '2rem', fullHeight = false, fullWidth = false, hoverEffect = false, ...rest } = props;
+  const { children, className, padding = '2rem', bgColor = 'transparent', fullHeight = false, fullWidth = false, hoverEffect = false, ...rest } = props;
 
   const widthClass = fullWidth ? style['widthFull'] : '';
   const heightClass = fullHeight ? style['heightFull'] : '';
   const hoverClass = hoverEffect ? style.hover : '';
   const paddingClass = getPaddingClass(padding);
+  const bgColorClass = getBgColorClass(bgColor);
 
   return (
-    <div className={mergeClassNames(style.layout, paddingClass, widthClass, heightClass, hoverClass, className)} {...rest}>
+    <div className={mergeClassNames(style.layout, paddingClass, bgColorClass, widthClass, heightClass, hoverClass, className)} {...rest}>
       {children}
     </div>
   );
