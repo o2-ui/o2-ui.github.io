@@ -5,9 +5,9 @@ title: Reply
 
 import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
 
-import A11yCompareList from '@site/src/organisms/carmore-icon/A11yCompareList';
-import ColorCompareList from '@site/src/organisms/carmore-icon/ColorCompareList';
-import SizeCompareList from '@site/src/organisms/carmore-icon/SizeCompareList';
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
 
 # Reply
 
@@ -39,7 +39,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 - `width` 의 기본값은 '1.5rem' 입니다.
 - `height` 의 기본값은 '1.5rem' 입니다.
 
-<SizeCompareList icon={'reply'} sizes={['1.5rem', 30, '48px', '5rem']} />
+<SizePropsCompareList icon={'reply'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
 <CarmoreIcon icon={'reply'} ... /> // 기본값('1.5rem') 적용
@@ -55,7 +55,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 
 `className`을 통해 텍스트 색상(color)을 지정하면 아이콘의 색상이 변경됩니다.
 
-<ColorCompareList icon={'reply'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+<ColorPropsCompareList icon={'reply'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
 
 ```css
 .text-red {
@@ -99,7 +99,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 - 기본 접근성 속성이 적용되어 있지만, 필요에 따라 커스터마이징할 수 있습니다.
 - _(아이콘에 마우스를 올려보세요.)_
 
-<A11yCompareList icon={'reply'} ariaLabels={[undefined, '대답하기', '말풍선']} />
+<A11yPropsCompareList icon={'reply'} ariaLabels={[undefined, '대답하기', '말풍선']} />
 
 ```tsx
 <CarmoreIcon icon={'reply'} ... /> // 기본값('응답하기') 적용

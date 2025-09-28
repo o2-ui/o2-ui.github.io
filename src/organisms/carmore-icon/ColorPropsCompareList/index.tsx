@@ -5,8 +5,7 @@ import React from 'react';
 
 import style from './style.module.css';
 
-import Box from '@/atoms/Box';
-import Flex from '@/atoms/Flex';
+import PropsListWrapper from '@/molecules/carmore-icon/PropsListWrapper';
 
 type ColorType = 'red' | 'orange' | 'green' | 'blue' | 'purple';
 
@@ -32,18 +31,16 @@ interface Props {
   colors: ColorType[];
 }
 
-const ColorCompareList = (props: Props) => {
+const ColorPropsCompareList = (props: Props) => {
   const { icon, colors } = props;
   return (
-    <Box>
-      <Flex direction={'row'} gap={'3rem'} alignItems={'center'} justifyContent={'center'}>
-        {colors.map((color) => {
-          const colorClass = getColorClass(color);
-          return <CarmoreIcon className={colorClass} icon={icon} width={60} height={60} />;
-        })}
-      </Flex>
-    </Box>
+    <PropsListWrapper>
+      {colors.map((color) => {
+        const colorClass = getColorClass(color);
+        return <CarmoreIcon className={colorClass} icon={icon} width={60} height={60} />;
+      })}
+    </PropsListWrapper>
   );
 };
 
-export default ColorCompareList;
+export default ColorPropsCompareList;
