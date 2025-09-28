@@ -1,0 +1,112 @@
+---
+id: loading-spinner
+title: LoadingSpinner
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+import LoadingSpinnerColorList from '@site/src/organisms/carmore-icon/LoadingSpinnerColorList';
+import LoadingSpinnerSpinList from '@site/src/organisms/carmore-icon/LoadingSpinnerSpinList';
+
+# LoadingSpinner
+
+<br />
+
+<IconProfile icon={'loading-spinner'} />
+
+## 사용법
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'loading-spinner'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## `spin` Props
+
+아이콘의 (회전) 애니메이션 실행 여부를 지정할 수 있습니다.
+
+- `spin` 의 기본값은 true 입니다.
+
+<LoadingSpinnerSpinList />
+```tsx
+<CarmoreIcon icon={'loading-spinner'} ... /> // 기본값('true') 적용
+<CarmoreIcon icon={'loading-spinner'} spin={'false'} ... />
+```
+
+<br />
+<br />
+
+## 크기 설정
+
+아이콘의 크기는 `width` 와 `height` 속성으로 조절할 수 있습니다.
+
+- 숫자를 직접 지정할 수 있으며, 'px', 'rem', '%' 같은 단위가 포함된 문자열도 허용됩니다.
+  - (단, 아이콘의 원래 비율은 고정되어 있어 변경할 수 없습니다.)
+- `width` 의 기본값은 '1.5rem' 입니다.
+- `height` 의 기본값은 '1.5rem' 입니다.
+
+<SizePropsCompareList icon={'loading-spinner'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'loading-spinner'} ... /> // 기본값('1.5rem') 적용
+<CarmoreIcon icon={'loading-spinner'} width={30} height={30} ... />
+<CarmoreIcon icon={'loading-spinner'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'loading-spinner'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## 색상 변경
+
+아래 CSS 변수를 사용해, 아이콘의 색상을 지정할 수 있습니다.
+
+- _--carmore-icon-loading-spinner-background_
+- _--carmore-icon-loading-spinner-foreground_
+
+<LoadingSpinnerColorList />
+
+```css
+.loading-spinner-icon-1 {
+  ...
+  --carmore-icon-loading-spinner-background: primary;
+}
+
+.loading-spinner-icon-2 {
+  ...
+  --carmore-icon-loading-spinner-foreground: primary;
+}
+```
+
+```tsx
+
+<CarmoreIcon className={'loading-spinner-icon-1'} icon={'loading-spinner'} ... />
+<CarmoreIcon className={'loading-spinner-icon-2'} icon={'loading-spinner'} ... />
+```
+
+<br />
+<br />
+
+## 접근성 (a11y)
+
+`role`, `aria-label` 등의 속성을 설정하는 것을 권장합니다.
+
+- `role` 의 기본값은 'status' 입니다.
+- 기본적으로 스크린리더 전용 텍스트('로딩 중')가 제공됩니다.
+- `aria-hidden` 속성의 기본값은 false 입니다. (화면 읽기 지원을 위해 노출됨)
+
+```tsx
+<LoadingSpinner aria-label={'데이터 불러오는 중'} />
+<LoadingSpinner aria-hidden={true} /> // 장식으로만 사용할 경우
+```

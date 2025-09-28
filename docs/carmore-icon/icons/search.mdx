@@ -1,0 +1,108 @@
+---
+id: search
+title: Search
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# Search
+
+<br />
+
+<IconProfile icon={'search'} />
+
+## 사용법
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'search'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## 크기 설정
+
+아이콘의 크기는 `width` 와 `height` 속성으로 조절할 수 있습니다.
+
+- 숫자를 직접 지정할 수 있으며, 'px', 'rem', '%' 같은 단위가 포함된 문자열도 허용됩니다.
+  - (단, 아이콘의 원래 비율은 고정되어 있어 변경할 수 없습니다.)
+- `width` 의 기본값은 '1.5rem' 입니다.
+- `height` 의 기본값은 '1.5rem' 입니다.
+
+<SizePropsCompareList icon={'search'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'search'} ... /> // 기본값('1.5rem') 적용
+<CarmoreIcon icon={'search'} width={30} height={30} ... />
+<CarmoreIcon icon={'search'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'search'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## 색상 변경
+
+`className`을 통해 텍스트 색상(color)을 지정하면 아이콘의 색상이 변경됩니다.
+
+<ColorPropsCompareList icon={'search'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'search'} className={'text-red'} ... />
+<CarmoreIcon icon={'search'} className={'text-orange'} ... />
+<CarmoreIcon icon={'search'} className={'text-green'}  ... />
+<CarmoreIcon icon={'search'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'search'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## 접근성 (a11y)
+
+`role`, `aria-label` 등의 속성을 설정하는 것을 권장합니다.
+
+- `role` 의 기본값은 'img' 입니다.
+- `aria-label` 의 기본값은 '검색하기' 입니다.
+- 기본 접근성 속성이 적용되어 있지만, 필요에 따라 커스터마이징할 수 있습니다.
+- _(아이콘에 마우스를 올려보세요.)_
+
+<A11yPropsCompareList icon={'search'} ariaLabels={[undefined, '찾아보기', '돋보기']} />
+
+```tsx
+<CarmoreIcon icon={'search'} ... /> // 기본값('검색하기') 적용
+<CarmoreIcon icon={'search'} aria-label={'찾아보기'} ... />
+<CarmoreIcon icon={'search'} aria-label={'돋보기'} ... />
+```

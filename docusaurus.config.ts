@@ -20,12 +20,6 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // i18n 설정
-  i18n: {
-    defaultLocale: 'ko',
-    locales: ['ko', 'en'],
-  },
-
   themeConfig: {
     navbar: {
       items: [
@@ -34,6 +28,15 @@ const config: Config = {
           position: 'right',
         },
       ],
+    },
+  },
+
+  i18n: {
+    defaultLocale: 'ko',
+    locales: ['ko', 'en'],
+    localeConfigs: {
+      ko: { label: '한국어' },
+      en: { label: 'English' },
     },
   },
 
@@ -46,7 +49,7 @@ const config: Config = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.css'), require.resolve('@o2-ui/carmore-icon/index.css')],
         },
       } satisfies Preset.Options,
     ],
