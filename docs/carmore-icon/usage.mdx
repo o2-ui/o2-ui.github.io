@@ -21,7 +21,7 @@ import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsComp
 ```tsx
 // src/main.tsx
 
-import '@o2-ui/react-icon/index.css';
+import '@o2-ui/carmore-icon/index.css';
 ```
 
 또는 프로젝트의 전역 스타일(Global CSS)에도 포함할 수 있습니다.
@@ -30,7 +30,23 @@ import '@o2-ui/react-icon/index.css';
 ```css
 /* src/styles/global.css */
 
-@import '@o2-ui/react-icon/index.css';
+@import '@o2-ui/carmore-icon/index.css';
+```
+
+### Tailwind 환경
+
+Tailwind를 사용할 때는 아이콘 CSS를 @tailwind 지시문 앞쪽에 배치해야 합니다.
+이렇게 하면 Tailwind의 유틸리티 클래스를 사용해, 아이콘의 색상, 크기 등을 자유롭게 커스터마이징할 수 있습니다.
+
+```css
+/* src/styles/globals.css */
+
+/* 아이콘 기본 스타일 */
+@import '@o2-ui/carmore-icon/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
 
 <br />
