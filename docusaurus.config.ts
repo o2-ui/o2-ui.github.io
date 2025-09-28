@@ -40,7 +40,7 @@ const config: Config = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.css'), require.resolve('@o2-ui/carmore-icon/index.css')],
         },
       } satisfies Preset.Options,
     ],
