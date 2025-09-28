@@ -5,14 +5,14 @@ title: Installation
 
 # Installation
 
-## 요구사항
+## Requirements
 
-`@o2-ui/carmore-icon`은 다음 환경을 필요로 합니다:
+`@o2-ui/carmore-icon` expects the following environment:
 
-- React 18 이상
-- React DOM 18 이상
+- React 18 or newer
+- React DOM 18 or newer
 
-## 설치 방법
+## Install
 
 ```bash
 # npm

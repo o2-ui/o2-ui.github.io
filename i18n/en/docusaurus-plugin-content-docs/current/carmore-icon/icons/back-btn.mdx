@@ -1,0 +1,108 @@
+---
+id: back-btn
+title: BackBtn
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# BackBtn
+
+<br />
+
+<IconProfile icon={'back-btn'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'back-btn'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## Control size
+
+You can control the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings with units such as 'px', 'rem', or '%'.
+  - (The icon keeps its intrinsic aspect ratio and cannot be stretched.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'back-btn'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'back-btn'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'back-btn'} width={30} height={30} ... />
+<CarmoreIcon icon={'back-btn'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'back-btn'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Change color
+
+Set the text color via the `className` prop to recolor the icon.
+
+<ColorPropsCompareList icon={'back-btn'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'back-btn'} className={'text-red'} ... />
+<CarmoreIcon icon={'back-btn'} className={'text-orange'} ... />
+<CarmoreIcon icon={'back-btn'} className={'text-green'}  ... />
+<CarmoreIcon icon={'back-btn'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'back-btn'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+We recommend configuring attributes such as `role` and `aria-label`.
+
+- The default `role` is 'img'.
+- The default `aria-label` is 'Move down'.
+- Base accessibility defaults are provided, and you can override them when needed.
+- _(Hover the icon to check the tooltip.)_
+
+<A11yPropsCompareList icon={'back-btn'} ariaLabels={[undefined, 'Arrow', 'Left arrow']} />
+
+```tsx
+<CarmoreIcon icon={'back-btn'} ... /> // Uses the default ('Go back')
+<CarmoreIcon icon={'back-btn'} aria-label={'Arrow'} ... />
+<CarmoreIcon icon={'back-btn'} aria-label={'Left arrow'} ... />
+```

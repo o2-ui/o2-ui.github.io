@@ -1,0 +1,112 @@
+---
+id: loading-spinner
+title: LoadingSpinner
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+import LoadingSpinnerColorList from '@site/src/organisms/carmore-icon/LoadingSpinnerColorList';
+import LoadingSpinnerSpinList from '@site/src/organisms/carmore-icon/LoadingSpinnerSpinList';
+
+# LoadingSpinner
+
+<br />
+
+<IconProfile icon={'loading-spinner'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'loading-spinner'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## `spin` Props
+
+Control whether the icon plays its rotation animation.
+
+- The default value for `spin` is `true`.
+
+<LoadingSpinnerSpinList />
+```tsx
+<CarmoreIcon icon={'loading-spinner'} ... /> // Uses the default ('true')
+<CarmoreIcon icon={'loading-spinner'} spin={'false'} ... />
+```
+
+<br />
+<br />
+
+## Control size
+
+You can control the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings with units such as 'px', 'rem', or '%'.
+  - (The icon keeps its intrinsic aspect ratio and cannot be stretched.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'loading-spinner'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'loading-spinner'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'loading-spinner'} width={30} height={30} ... />
+<CarmoreIcon icon={'loading-spinner'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'loading-spinner'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Change color
+
+Use the CSS variables below to adjust the icon colors.
+
+- _--carmore-icon-loading-spinner-background_
+- _--carmore-icon-loading-spinner-foreground_
+
+<LoadingSpinnerColorList />
+
+```css
+.loading-spinner-icon-1 {
+  ...
+  --carmore-icon-loading-spinner-background: primary;
+}
+
+.loading-spinner-icon-2 {
+  ...
+  --carmore-icon-loading-spinner-foreground: primary;
+}
+```
+
+```tsx
+
+<CarmoreIcon className={'loading-spinner-icon-1'} icon={'loading-spinner'} ... />
+<CarmoreIcon className={'loading-spinner-icon-2'} icon={'loading-spinner'} ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+We recommend configuring attributes such as `role` and `aria-label`.
+
+- The default `role` is 'status'.
+- A screen-reader-only text ('Loading') is provided by default.
+- The default value for `aria-hidden` is `false` (it stays exposed for screen readers).
+
+```tsx
+<LoadingSpinner aria-label={'Loading data'} />
+<LoadingSpinner aria-hidden={true} /> // When used purely as decoration
+```

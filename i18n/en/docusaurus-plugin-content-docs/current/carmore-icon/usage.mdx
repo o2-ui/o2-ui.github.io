@@ -1,0 +1,148 @@
+---
+id: usage
+title: Usage
+pagination_next: null
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# Usage
+
+<br />
+
+## Import styles
+
+To apply the default icon styles, import the CSS file in your project entry point (for example `src/main.tsx` or `src/index.tsx`).
+
+```tsx
+// src/main.tsx
+
+import '@o2-ui/carmore-icon/index.css';
+```
+
+Or include it inside your global styles so every page picks it up automatically.
+
+```css
+/* src/styles/global.css */
+
+@import '@o2-ui/carmore-icon/index.css';
+```
+
+### Tailwind projects
+
+When you use Tailwind, place the icon CSS before the `@tailwind` directives. That way you can keep customizing icon color, size, and more with Tailwind utility classes.
+
+```css
+/* src/styles/globals.css */
+
+/* Icon base styles */
+@import '@o2-ui/carmore-icon/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+<br />
+<br />
+
+## Set global defaults
+
+> ! Every icon class name starts with `o2-ui-carmore-icon-`.
+
+Add the following rules to your global CSS to update the default color (and dark mode color) for every icon at once.
+
+```css
+/* src/styles/global.css */
+
+[class^='o2-ui-carmore-icon-'] {
+  color: #999; /* Default icon color */
+}
+
+.dark [class^='o2-ui-carmore-icon-'] {
+  color: #ddd; /* Dark mode */
+}
+```
+
+<br />
+<br />
+
+## Control size
+
+You can control the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings with units such as px, rem, or %.
+  - (The icon keeps its intrinsic aspect ratio and cannot be stretched.)
+
+<SizePropsCompareList icon={'user'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'user'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'user'} width={30} height={30} ... />
+<CarmoreIcon icon={'user'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'user'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Change color
+
+Set the text color via the `className` prop to recolor the icon.
+
+- The default color is defined by your global CSS.
+- Some icons have limited color customization. Check each icon's detail page for specifics.
+
+<ColorPropsCompareList icon={'check'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'check'} className={'text-red'} ... />
+<CarmoreIcon icon={'check'} className={'text-orange'} ... />
+<CarmoreIcon icon={'check'} className={'text-green'}  ... />
+<CarmoreIcon icon={'check'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'check'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+We recommend configuring attributes such as `role` and `aria-label`.
+
+- Base accessibility defaults are provided, and you can override them when needed.
+- _(Hover the icon to check the tooltip.)_
+
+<A11yPropsCompareList icon={'back-btn'} ariaLabels={[undefined, 'Arrow', 'Left arrow']} />
+
+```tsx
+<CarmoreIcon icon={'back-btn'} ... /> // Uses the default ('Go back')
+<CarmoreIcon icon={'back-btn'} aria-label={'Arrow'} ... />
+<CarmoreIcon icon={'back-btn'} aria-label={'Left arrow'} ... />
+```

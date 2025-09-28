@@ -31,6 +31,15 @@ const config: Config = {
     },
   },
 
+  i18n: {
+    defaultLocale: 'ko',
+    locales: ['ko', 'en'],
+    localeConfigs: {
+      ko: { label: '한국어' },
+      en: { label: 'English' },
+    },
+  },
+
   presets: [
     [
       'classic',

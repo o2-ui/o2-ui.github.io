@@ -1,0 +1,157 @@
+---
+id: like
+title: Like
+---
+
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+import PropsListWrapper from '@site/src/molecules/carmore-icon/PropsListWrapper';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ActiveLikeIconList from '@site/src/organisms/carmore-icon/ActiveLikeIconList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import LikeIconPlayground from '@site/src/organisms/carmore-icon/LikeIconPlayground';
+import LikeIconVariantsList from '@site/src/organisms/carmore-icon/LikeIconVariantsList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# Like
+
+<br />
+
+<IconProfile icon={'like'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'like'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## `variants` Props
+
+You can change the icon's appearance.
+
+- _(Click the icon to try it.)_
+
+<LikeIconPlayground />
+<LikeIconVariantsList />
+
+```tsx
+<CarmoreIcon icon={'like'} ... /> // Uses the default ('fill')
+<CarmoreIcon icon={'like'} variants={'solid'} ... />
+<CarmoreIcon icon={'like'} variants={'active'} ... />
+```
+
+### Additional notes
+
+Use the following CSS variable to customize the icon color when `variants={'active'}`.
+
+- _--carmore-icon-like-active_
+
+<ActiveLikeIconList />
+
+```css
+.like-icon-1 {
+  ...
+  --carmore-icon-like-active: orange;
+}
+
+.like-icon-2 {
+  ...
+  --carmore-icon-like-active: skyblue;
+}
+```
+
+```tsx
+<CarmoreIcon className={'like-icon-1'} icon={'like'} variants={'active'} ... />
+<CarmoreIcon className={'like-icon-2'} icon={'like'} variants={'active'} ... />
+```
+
+<br />
+<br />
+
+## Control size
+
+You can control the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings with units such as 'px', 'rem', or '%'.
+  - (The icon keeps its intrinsic aspect ratio and cannot be stretched.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'like'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'like'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'like'} width={30} height={30} ... />
+<CarmoreIcon icon={'like'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'like'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Change color
+
+Set the text color via the `className` prop to recolor the icon.
+
+<ColorPropsCompareList icon={'like'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'like'} className={'text-red'} ... />
+<CarmoreIcon icon={'like'} className={'text-orange'} ... />
+<CarmoreIcon icon={'like'} className={'text-green'}  ... />
+<CarmoreIcon icon={'like'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'like'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+We recommend configuring attributes such as `role` and `aria-label`.
+
+- The default `role` is 'img'.
+- The default `aria-label` is 'Like'.
+- Base accessibility defaults are provided, and you can override them when needed.
+- _(Hover the icon to check the tooltip.)_
+
+<A11yPropsCompareList icon={'like'} ariaLabels={[undefined, 'Heart', 'Empathize']} />
+
+```tsx
+<CarmoreIcon icon={'like'} ... /> // Uses the default ('Like')
+<CarmoreIcon icon={'like'} aria-label={'Heart'} ... />
+<CarmoreIcon icon={'like'} aria-label={'Empathize'} ... />
+```
