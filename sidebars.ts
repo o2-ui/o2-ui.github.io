@@ -101,7 +101,7 @@ const sidebars: SidebarsConfig = {
             'carmore-icon/icons/cs',
             'carmore-icon/icons/download',
             'carmore-icon/icons/like',
-            // 'carmore-icon/icons/loading-spinner',
+            'carmore-icon/icons/loading-spinner',
             'carmore-icon/icons/nowhere',
             'carmore-icon/icons/out-link',
             'carmore-icon/icons/pin-map',

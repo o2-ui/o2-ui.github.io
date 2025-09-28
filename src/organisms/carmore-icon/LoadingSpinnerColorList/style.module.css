@@ -1,0 +1,9 @@
+.loading-spinner-icon-1 {
+  --carmore-icon-loading-spinner-background: #0d6ffc;
+  --carmore-icon-loading-spinner-foreground: #f3f3f3;
+}
+
+.loading-spinner-icon-2 {
+  --carmore-icon-loading-spinner-background: #aab4c6;
+  --carmore-icon-loading-spinner-foreground: #0d6ffc;
+}
