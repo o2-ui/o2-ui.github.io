@@ -1,0 +1,108 @@
+---
+id: arrow-up-ktx
+title: ArrowUpKTX
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# ArrowUpKTX
+
+<br />
+
+<IconProfile icon={'arrow-up-ktx'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'arrow-up-ktx'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## Control size
+
+You can control the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings with units such as 'px', 'rem', or '%'.
+  - (The icon keeps its intrinsic aspect ratio and cannot be stretched.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'arrow-up-ktx'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'arrow-up-ktx'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'arrow-up-ktx'} width={30} height={30} ... />
+<CarmoreIcon icon={'arrow-up-ktx'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'arrow-up-ktx'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Change color
+
+Set the text color via the `className` prop to recolor the icon.
+
+<ColorPropsCompareList icon={'arrow-up-ktx'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'arrow-up-ktx'} className={'text-red'} ... />
+<CarmoreIcon icon={'arrow-up-ktx'} className={'text-orange'} ... />
+<CarmoreIcon icon={'arrow-up-ktx'} className={'text-green'}  ... />
+<CarmoreIcon icon={'arrow-up-ktx'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'arrow-up-ktx'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+We recommend setting accessibility attributes such as `role` and `aria-label`.
+
+- The default `role` is 'img'.
+- The default `aria-label` is 'Up'.
+- Accessibility defaults are provided, and you can customize them as needed.
+- _(Hover the icon to see the tooltip.)_
+
+<A11yPropsCompareList icon={'arrow-up-ktx'} ariaLabels={[undefined, 'Arrow', 'Up arrow']} />
+
+```tsx
+<CarmoreIcon icon={'arrow-up-ktx'} ... /> // Uses the default ('Up')
+<CarmoreIcon icon={'arrow-up-ktx'} aria-label={'Arrow'} ... />
+<CarmoreIcon icon={'arrow-up-ktx'} aria-label={'Up arrow'} ... />
+```

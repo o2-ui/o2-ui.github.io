@@ -1,0 +1,108 @@
+---
+id: hotel-kids
+title: HotelKids
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# HotelKids
+
+<br />
+
+<IconProfile icon={'hotel-kids'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'hotel-kids'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## Control size
+
+You can control the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings with units such as 'px', 'rem', or '%'.
+  - (The icon keeps its intrinsic aspect ratio and cannot be stretched.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'hotel-kids'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'hotel-kids'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'hotel-kids'} width={30} height={30} ... />
+<CarmoreIcon icon={'hotel-kids'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'hotel-kids'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Change color
+
+Set the text color via the `className` prop to recolor the icon.
+
+<ColorPropsCompareList icon={'hotel-kids'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'hotel-kids'} className={'text-red'} ... />
+<CarmoreIcon icon={'hotel-kids'} className={'text-orange'} ... />
+<CarmoreIcon icon={'hotel-kids'} className={'text-green'}  ... />
+<CarmoreIcon icon={'hotel-kids'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'hotel-kids'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+We recommend setting accessibility attributes such as `role` and `aria-label`.
+
+- The default `role` is 'img'.
+- The default `aria-label` is 'Kids play area'.
+- Accessibility defaults are provided, and you can customize them as needed.
+- _(Hover the icon to see the tooltip.)_
+
+<A11yPropsCompareList icon={'hotel-kids'} ariaLabels={[undefined, 'Kids zone', 'Activities']} />
+
+```tsx
+<CarmoreIcon icon={'hotel-kids'} ... /> // Uses the default ('Kids play area')
+<CarmoreIcon icon={'hotel-kids'} aria-label={'Kids zone'} ... />
+<CarmoreIcon icon={'hotel-kids'} aria-label={'Activities'} ... />
+```

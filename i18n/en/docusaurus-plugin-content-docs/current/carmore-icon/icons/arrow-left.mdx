@@ -1,0 +1,108 @@
+---
+id: arrow-left
+title: ArrowLeft
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# ArrowLeft
+
+<br />
+
+<IconProfile icon={'arrow-left'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'arrow-left'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## Control size
+
+You can control the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings with units such as 'px', 'rem', or '%'.
+  - (The icon keeps its intrinsic aspect ratio and cannot be stretched.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'arrow-left'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'arrow-left'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'arrow-left'} width={30} height={30} ... />
+<CarmoreIcon icon={'arrow-left'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'arrow-left'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Change color
+
+Set the text color via the `className` prop to recolor the icon.
+
+<ColorPropsCompareList icon={'arrow-left'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'arrow-left'} className={'text-red'} ... />
+<CarmoreIcon icon={'arrow-left'} className={'text-orange'} ... />
+<CarmoreIcon icon={'arrow-left'} className={'text-green'}  ... />
+<CarmoreIcon icon={'arrow-left'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'arrow-left'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+We recommend setting accessibility attributes such as `role` and `aria-label`.
+
+- The default `role` is 'img'.
+- The default `aria-label` is 'Left'.
+- Accessibility defaults are provided, and you can customize them as needed.
+- _(Hover the icon to see the tooltip.)_
+
+<A11yPropsCompareList icon={'arrow-left'} ariaLabels={[undefined, 'Arrow', 'Left arrow']} />
+
+```tsx
+<CarmoreIcon icon={'arrow-left'} ... /> // Uses the default ('Left')
+<CarmoreIcon icon={'arrow-left'} aria-label={'Arrow'} ... />
+<CarmoreIcon icon={'arrow-left'} aria-label={'Left arrow'} ... />
+```
