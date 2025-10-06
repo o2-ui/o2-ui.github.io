@@ -42,7 +42,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'arrow-left'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'arrow-left'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'arrow-left'} ... /> // Uses the default ('왼쪽으로')
 <CarmoreIcon icon={'arrow-left'} width={30} height={30} ... />
 <CarmoreIcon icon={'arrow-left'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'arrow-left'} width={'5rem'} height={'5rem'} ... />
@@ -95,14 +95,14 @@ Set the text color via the `className` prop to recolor the icon.
 We recommend setting accessibility attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'Left'.
+- The default `aria-label` is '왼쪽으로'.
 - Accessibility defaults are provided, and you can customize them as needed.
 - _(Hover the icon to see the tooltip.)_
 
 <A11yPropsCompareList icon={'arrow-left'} ariaLabels={[undefined, 'Arrow', 'Left arrow']} />
 
 ```tsx
-<CarmoreIcon icon={'arrow-left'} ... /> // Uses the default ('Left')
+<CarmoreIcon icon={'arrow-left'} ... /> // Uses the default ('왼쪽으로')
 <CarmoreIcon icon={'arrow-left'} aria-label={'Arrow'} ... />
 <CarmoreIcon icon={'arrow-left'} aria-label={'Left arrow'} ... />
 ```

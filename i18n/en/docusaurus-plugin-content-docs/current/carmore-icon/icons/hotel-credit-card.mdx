@@ -42,7 +42,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'hotel-credit-card'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'hotel-credit-card'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'hotel-credit-card'} ... /> // Uses the default ('신용카드')
 <CarmoreIcon icon={'hotel-credit-card'} width={30} height={30} ... />
 <CarmoreIcon icon={'hotel-credit-card'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'hotel-credit-card'} width={'5rem'} height={'5rem'} ... />
@@ -95,14 +95,14 @@ Set the text color via the `className` prop to recolor the icon.
 We recommend setting accessibility attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'Credit card'.
+- The default `aria-label` is '신용카드'.
 - Accessibility defaults are provided, and you can customize them as needed.
 - _(Hover the icon to see the tooltip.)_
 
 <A11yPropsCompareList icon={'hotel-credit-card'} ariaLabels={[undefined, 'Make a payment', 'Card payment']} />
 
 ```tsx
-<CarmoreIcon icon={'hotel-credit-card'} ... /> // Uses the default ('Credit card')
+<CarmoreIcon icon={'hotel-credit-card'} ... /> // Uses the default ('신용카드')
 <CarmoreIcon icon={'hotel-credit-card'} aria-label={'Make a payment'} ... />
 <CarmoreIcon icon={'hotel-credit-card'} aria-label={'Card payment'} ... />
 ```

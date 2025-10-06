@@ -42,7 +42,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'user'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'user'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'user'} ... /> // Uses the default ('사용자')
 <CarmoreIcon icon={'user'} width={30} height={30} ... />
 <CarmoreIcon icon={'user'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'user'} width={'5rem'} height={'5rem'} ... />
@@ -95,14 +95,14 @@ Set the text color via the `className` prop to recolor the icon.
 We recommend configuring attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'User'.
+- The default `aria-label` is '사용자'.
 - Base accessibility defaults are provided, and you can override them when needed.
 - _(Hover the icon to check the tooltip.)_
 
 <A11yPropsCompareList icon={'user'} ariaLabels={[undefined, 'Profile', 'User']} />
 
 ```tsx
-<CarmoreIcon icon={'user'} ... /> // Uses the default ('User')
+<CarmoreIcon icon={'user'} ... /> // Uses the default ('사용자')
 <CarmoreIcon icon={'user'} aria-label={'Profile'} ... />
 <CarmoreIcon icon={'user'} aria-label={'User'} ... />
 ```

@@ -42,7 +42,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'pin-map'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'pin-map'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'pin-map'} ... /> // Uses the default ('위치보기')
 <CarmoreIcon icon={'pin-map'} width={30} height={30} ... />
 <CarmoreIcon icon={'pin-map'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'pin-map'} width={'5rem'} height={'5rem'} ... />
@@ -95,14 +95,14 @@ Set the text color via the `className` prop to recolor the icon.
 We recommend configuring attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'View location'.
+- The default `aria-label` is '위치보기'.
 - Base accessibility defaults are provided, and you can override them when needed.
 - _(Hover the icon to check the tooltip.)_
 
 <A11yPropsCompareList icon={'pin-map'} ariaLabels={[undefined, 'Map pin', 'Location']} />
 
 ```tsx
-<CarmoreIcon icon={'pin-map'} ... /> // Uses the default ('View location')
+<CarmoreIcon icon={'pin-map'} ... /> // Uses the default ('위치보기')
 <CarmoreIcon icon={'pin-map'} aria-label={'Map pin'} ... />
 <CarmoreIcon icon={'pin-map'} aria-label={'Location'} ... />
 ```

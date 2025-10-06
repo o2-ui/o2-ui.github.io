@@ -42,7 +42,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'hotel-dining'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'hotel-dining'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'hotel-dining'} ... /> // Uses the default ('다이닝')
 <CarmoreIcon icon={'hotel-dining'} width={30} height={30} ... />
 <CarmoreIcon icon={'hotel-dining'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'hotel-dining'} width={'5rem'} height={'5rem'} ... />
@@ -95,14 +95,14 @@ Set the text color via the `className` prop to recolor the icon.
 We recommend setting accessibility attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'Dining'.
+- The default `aria-label` is '다이닝'.
 - Accessibility defaults are provided, and you can customize them as needed.
 - _(Hover the icon to see the tooltip.)_
 
 <A11yPropsCompareList icon={'hotel-dining'} ariaLabels={[undefined, 'Restaurant', 'Meal']} />
 
 ```tsx
-<CarmoreIcon icon={'hotel-dining'} ... /> // Uses the default ('Dining')
+<CarmoreIcon icon={'hotel-dining'} ... /> // Uses the default ('다이닝')
 <CarmoreIcon icon={'hotel-dining'} aria-label={'Restaurant'} ... />
 <CarmoreIcon icon={'hotel-dining'} aria-label={'Meal'} ... />
 ```

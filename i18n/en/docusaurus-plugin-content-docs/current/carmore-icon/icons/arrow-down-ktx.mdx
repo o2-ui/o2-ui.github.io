@@ -42,7 +42,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'arrow-down-ktx'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'arrow-down-ktx'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'arrow-down-ktx'} ... /> // Uses the default ('아래로')
 <CarmoreIcon icon={'arrow-down-ktx'} width={30} height={30} ... />
 <CarmoreIcon icon={'arrow-down-ktx'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'arrow-down-ktx'} width={'5rem'} height={'5rem'} ... />
@@ -95,14 +95,14 @@ Set the text color via the `className` prop to recolor the icon.
 We recommend setting accessibility attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'Down'.
+- The default `aria-label` is '아래로'.
 - Accessibility defaults are provided, and you can customize them as needed.
 - _(Hover the icon to see the tooltip.)_
 
 <A11yPropsCompareList icon={'arrow-down-ktx'} ariaLabels={[undefined, 'Arrow', 'Down arrow']} />
 
 ```tsx
-<CarmoreIcon icon={'arrow-down-ktx'} ... /> // Uses the default ('Down')
+<CarmoreIcon icon={'arrow-down-ktx'} ... /> // Uses the default ('아래로')
 <CarmoreIcon icon={'arrow-down-ktx'} aria-label={'Arrow'} ... />
 <CarmoreIcon icon={'arrow-down-ktx'} aria-label={'Down arrow'} ... />
 ```

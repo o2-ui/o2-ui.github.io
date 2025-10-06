@@ -42,7 +42,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'copy-link'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'copy-link'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'copy-link'} ... /> // Uses the default ('주소 복사하기')
 <CarmoreIcon icon={'copy-link'} width={30} height={30} ... />
 <CarmoreIcon icon={'copy-link'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'copy-link'} width={'5rem'} height={'5rem'} ... />
@@ -95,14 +95,14 @@ Set the text color via the `className` prop to recolor the icon.
 We recommend configuring attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'Move down'.
+- The default `aria-label` is '주소 복사하기'.
 - Base accessibility defaults are provided, and you can override them when needed.
 - _(Hover the icon to check the tooltip.)_
 
 <A11yPropsCompareList icon={'copy-link'} ariaLabels={[undefined, 'View link', 'Copy URL']} />
 
 ```tsx
-<CarmoreIcon icon={'copy-link'} ... /> // Uses the default ('Copy address')
+<CarmoreIcon icon={'copy-link'} ... /> // Uses the default ('주소 복사하기')
 <CarmoreIcon icon={'copy-link'} aria-label={'View link'} ... />
 <CarmoreIcon icon={'copy-link'} aria-label={'Copy URL'} ... />
 ```

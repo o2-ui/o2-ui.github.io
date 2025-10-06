@@ -42,7 +42,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'setting'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'setting'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'setting'} ... /> // Uses the default ('설정하기')
 <CarmoreIcon icon={'setting'} width={30} height={30} ... />
 <CarmoreIcon icon={'setting'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'setting'} width={'5rem'} height={'5rem'} ... />
@@ -95,14 +95,14 @@ Set the text color via the `className` prop to recolor the icon.
 We recommend configuring attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'Configure'.
+- The default `aria-label` is '설정하기'.
 - Base accessibility defaults are provided, and you can override them when needed.
 - _(Hover the icon to check the tooltip.)_
 
 <A11yPropsCompareList icon={'setting'} ariaLabels={[undefined, 'Edit', 'Gear']} />
 
 ```tsx
-<CarmoreIcon icon={'setting'} ... /> // Uses the default ('Configure')
+<CarmoreIcon icon={'setting'} ... /> // Uses the default ('설정하기')
 <CarmoreIcon icon={'setting'} aria-label={'Edit'} ... />
 <CarmoreIcon icon={'setting'} aria-label={'Gear'} ... />
 ```

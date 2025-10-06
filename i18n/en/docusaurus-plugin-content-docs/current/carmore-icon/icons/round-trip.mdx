@@ -42,7 +42,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'round-trip'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'round-trip'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'round-trip'} ... /> // Uses the default ('왕복')
 <CarmoreIcon icon={'round-trip'} width={30} height={30} ... />
 <CarmoreIcon icon={'round-trip'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'round-trip'} width={'5rem'} height={'5rem'} ... />
@@ -95,14 +95,14 @@ Set the text color via the `className` prop to recolor the icon.
 We recommend setting accessibility attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'Round trip'.
+- The default `aria-label` is '왕복'.
 - Accessibility defaults are provided, and you can customize them as needed.
 - _(Hover the icon to see the tooltip.)_
 
 <A11yPropsCompareList icon={'round-trip'} ariaLabels={[undefined, 'Arrow', 'Round trip']} />
 
 ```tsx
-<CarmoreIcon icon={'round-trip'} ... /> // Uses the default ('Round trip')
+<CarmoreIcon icon={'round-trip'} ... /> // Uses the default ('왕복')
 <CarmoreIcon icon={'round-trip'} aria-label={'Arrow'} ... />
 <CarmoreIcon icon={'round-trip'} aria-label={'Round trip'} ... />
 ```
