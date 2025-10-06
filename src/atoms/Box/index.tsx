@@ -23,12 +23,22 @@ const getPaddingClass = (padding?: PaddingType) => {
   }
 };
 
-type BgColorType = 'transparent' | 'gray-10' | 'gray-20' | 'light-gray-10' | 'light-gray-30';
+type BgColorType = 'transparent' | 'gray-10' | 'gray-10-a-10' | 'gray-10-a-20' | 'gray-10-a-30' | 'gray-10-a-40' | 'gray-10-a-50' | 'gray-20' | 'light-gray-10' | 'light-gray-30';
 
 const getBgColorClass = (bgColor: BgColorType) => {
   switch (bgColor) {
     case 'gray-10':
       return style['bgGray10'];
+    case 'gray-10-a-10':
+      return style['bgGray10Alpha10'];
+    case 'gray-10-a-20':
+      return style['bgGray10Alpha20'];
+    case 'gray-10-a-30':
+      return style['bgGray10Alpha30'];
+    case 'gray-10-a-40':
+      return style['bgGray10Alpha40'];
+    case 'gray-10-a-50':
+      return style['bgGray10Alpha50'];
     case 'gray-20':
       return style['bgGray20'];
     case 'light-gray-10':

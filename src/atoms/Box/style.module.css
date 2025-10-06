@@ -47,6 +47,26 @@
   background-color: var(--color-gray-10);
 }
 
+.bgGray10Alpha10 {
+  background-color: var(--color-gray-10-alpha-10);
+}
+
+.bgGray10Alpha20 {
+  background-color: var(--color-gray-10-alpha-20);
+}
+
+.bgGray10Alpha30 {
+  background-color: var(--color-gray-10-alpha-30);
+}
+
+.bgGray10Alpha40 {
+  background-color: var(--color-gray-10-alpha-40);
+}
+
+.bgGray10Alpha50 {
+  background-color: var(--color-gray-10-alpha-50);
+}
+
 .bgGray20 {
   background-color: var(--color-gray-20);
 }

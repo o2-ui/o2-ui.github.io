@@ -14,6 +14,11 @@
   --ifm-color-primary-lighter: #53b5ff;
   --ifm-color-primary-lightest: #8acfff;
 
+  --color-common-100: #1e1e1e;
+  --color-common-0: #ffffff;
+
+  --color-primary-car: #0d6ffc;
+
   --ifm-color-grey-alpha-100: #bababa33;
   --ifm-color-grey-alpha-200: #bababa44;
   --ifm-color-grey-alpha-300: #bababa55;
@@ -30,6 +35,16 @@
   --color-gray-30: #f3f3f3;
   --color-gray-20: #f8f8f8;
   --color-gray-10: #f8f8f8;
+
+  --color-gray-10-alpha-90: #f8f8f8e6; /* 90% */
+  --color-gray-10-alpha-80: #f8f8f8cc; /* 80% */
+  --color-gray-10-alpha-70: #f8f8f8b3; /* 70% */
+  --color-gray-10-alpha-60: #f8f8f899; /* 60% */
+  --color-gray-10-alpha-50: #f8f8f880; /* 50% */
+  --color-gray-10-alpha-40: #f8f8f866; /* 40% */
+  --color-gray-10-alpha-30: #f8f8f84d; /* 30% */
+  --color-gray-10-alpha-20: #f8f8f833; /* 20% */
+  --color-gray-10-alpha-10: #f8f8f81a; /* 10% */
 
   --color-light-gray-90: #59647a;
   --color-light-gray-80: #6b7897;
@@ -66,6 +81,16 @@
   --color-gray-30: #3a3a3a;
   --color-gray-20: #2b2b2b;
   --color-gray-10: #1e1e1e;
+
+  --color-gray-10-alpha-90: #1e1e1ee6; /* 90% */
+  --color-gray-10-alpha-80: #1e1e1ecc; /* 80% */
+  --color-gray-10-alpha-70: #1e1e1eb3; /* 70% */
+  --color-gray-10-alpha-60: #1e1e1e99; /* 60% */
+  --color-gray-10-alpha-50: #1e1e1e80; /* 50% */
+  --color-gray-10-alpha-40: #1e1e1e66; /* 40% */
+  --color-gray-10-alpha-30: #1e1e1e4d; /* 30% */
+  --color-gray-10-alpha-20: #1e1e1e33; /* 20% */
+  --color-gray-10-alpha-10: #1e1e1e1a; /* 10% */
 
   --color-light-gray-90: #cdd5e5;
   --color-light-gray-80: #b5c0d9;

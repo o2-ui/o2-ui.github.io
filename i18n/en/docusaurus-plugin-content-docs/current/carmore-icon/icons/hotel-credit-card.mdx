@@ -1,0 +1,108 @@
+---
+id: hotel-credit-card
+title: HotelCreditCard
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# HotelCreditCard
+
+<br />
+
+<IconProfile icon={'hotel-credit-card'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'hotel-credit-card'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## Control size
+
+You can control the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings with units such as 'px', 'rem', or '%'.
+  - (The icon keeps its intrinsic aspect ratio and cannot be stretched.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'hotel-credit-card'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'hotel-credit-card'} ... /> // Uses the default ('신용카드')
+<CarmoreIcon icon={'hotel-credit-card'} width={30} height={30} ... />
+<CarmoreIcon icon={'hotel-credit-card'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'hotel-credit-card'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Change color
+
+Set the text color via the `className` prop to recolor the icon.
+
+<ColorPropsCompareList icon={'hotel-credit-card'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'hotel-credit-card'} className={'text-red'} ... />
+<CarmoreIcon icon={'hotel-credit-card'} className={'text-orange'} ... />
+<CarmoreIcon icon={'hotel-credit-card'} className={'text-green'}  ... />
+<CarmoreIcon icon={'hotel-credit-card'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'hotel-credit-card'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+We recommend setting accessibility attributes such as `role` and `aria-label`.
+
+- The default `role` is 'img'.
+- The default `aria-label` is '신용카드'.
+- Accessibility defaults are provided, and you can customize them as needed.
+- _(Hover the icon to see the tooltip.)_
+
+<A11yPropsCompareList icon={'hotel-credit-card'} ariaLabels={[undefined, 'Make a payment', 'Card payment']} />
+
+```tsx
+<CarmoreIcon icon={'hotel-credit-card'} ... /> // Uses the default ('신용카드')
+<CarmoreIcon icon={'hotel-credit-card'} aria-label={'Make a payment'} ... />
+<CarmoreIcon icon={'hotel-credit-card'} aria-label={'Card payment'} ... />
+```

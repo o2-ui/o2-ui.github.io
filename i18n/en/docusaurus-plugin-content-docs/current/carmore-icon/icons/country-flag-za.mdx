@@ -41,7 +41,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'country-flag-za'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'country-flag-za'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'country-flag-za'} ... /> // Uses the default ('남아프리카공화국')
 <CarmoreIcon icon={'country-flag-za'} width={30} height={30} ... />
 <CarmoreIcon icon={'country-flag-za'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'country-flag-za'} width={'5rem'} height={'5rem'} ... />
@@ -64,13 +64,13 @@ You can control the icon size with the `width` and `height` props.
 We recommend configuring attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'South Africa'.
+- The default `aria-label` is '남아프리카공화국'.
 - Base accessibility defaults are provided, and you can override them when needed.
 - _(Hover the icon to check the tooltip.)_
 
 <A11yPropsCompareList icon={'country-flag-za'} ariaLabels={[undefined, 'Flag']} />
 
 ```tsx
-<CarmoreIcon icon={'country-flag-za'} ... /> // Uses the default ('South Africa')
+<CarmoreIcon icon={'country-flag-za'} ... /> // Uses the default ('남아프리카공화국')
 <CarmoreIcon icon={'country-flag-za'} aria-label={'Flag'} ... />
 ```

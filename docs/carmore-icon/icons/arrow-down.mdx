@@ -6,6 +6,7 @@ title: ArrowDown
 import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
 
 import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ArrowThinList from '@site/src/organisms/carmore-icon/ArrowThinList';
 import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
 import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
 
@@ -25,6 +26,21 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
   <CarmoreIcon icon={'arrow-down'} ... />
 
 // ...
+```
+
+<br />
+<br />
+
+## `thin` Props
+
+아이콘의 stroke 폭을 설정할 수 있습니다.
+
+- `thin` 의 기본값은 false 입니다.
+
+<ArrowThinList icon={'arrow-down'} />
+```tsx
+<CarmoreIcon icon={'arrow-down'} ... /> // 기본값(false) 적용
+<CarmoreIcon icon={'arrow-down'} thin ... />
 ```
 
 <br />
@@ -95,7 +111,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 `role`, `aria-label` 등의 속성을 설정하는 것을 권장합니다.
 
 - `role` 의 기본값은 'img' 입니다.
-- `aria-label` 의 기본값은 '더 아래로' 입니다.
+- `aria-label` 의 기본값은 '아래로' 입니다.
 - 기본 접근성 속성이 적용되어 있지만, 필요에 따라 커스터마이징할 수 있습니다.
 - _(아이콘에 마우스를 올려보세요.)_
 

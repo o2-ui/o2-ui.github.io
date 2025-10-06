@@ -42,7 +42,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'cancel'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'cancel'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'cancel'} ... /> // Uses the default ('취소하기')
 <CarmoreIcon icon={'cancel'} width={30} height={30} ... />
 <CarmoreIcon icon={'cancel'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'cancel'} width={'5rem'} height={'5rem'} ... />
@@ -95,14 +95,14 @@ Set the text color via the `className` prop to recolor the icon.
 We recommend configuring attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'Move down'.
+- The default `aria-label` is '취소하기'.
 - Base accessibility defaults are provided, and you can override them when needed.
 - _(Hover the icon to check the tooltip.)_
 
 <A11yPropsCompareList icon={'cancel'} ariaLabels={[undefined, 'Close', 'Delete']} />
 
 ```tsx
-<CarmoreIcon icon={'cancel'} ... /> // Uses the default ('Cancel')
+<CarmoreIcon icon={'cancel'} ... /> // Uses the default ('취소하기')
 <CarmoreIcon icon={'cancel'} aria-label={'Close'} ... />
 <CarmoreIcon icon={'cancel'} aria-label={'Delete'} ... />
 ```

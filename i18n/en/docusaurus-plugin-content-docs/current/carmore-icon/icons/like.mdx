@@ -46,7 +46,7 @@ You can change the icon's appearance.
 <LikeIconVariantsList />
 
 ```tsx
-<CarmoreIcon icon={'like'} ... /> // Uses the default ('fill')
+<CarmoreIcon icon={'like'} ... /> // Uses the default ('좋아요')
 <CarmoreIcon icon={'like'} variants={'solid'} ... />
 <CarmoreIcon icon={'like'} variants={'active'} ... />
 ```
@@ -91,7 +91,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'like'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'like'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'like'} ... /> // Uses the default ('좋아요')
 <CarmoreIcon icon={'like'} width={30} height={30} ... />
 <CarmoreIcon icon={'like'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'like'} width={'5rem'} height={'5rem'} ... />
@@ -144,14 +144,14 @@ Set the text color via the `className` prop to recolor the icon.
 We recommend configuring attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'Like'.
+- The default `aria-label` is '좋아요'.
 - Base accessibility defaults are provided, and you can override them when needed.
 - _(Hover the icon to check the tooltip.)_
 
 <A11yPropsCompareList icon={'like'} ariaLabels={[undefined, 'Heart', 'Empathize']} />
 
 ```tsx
-<CarmoreIcon icon={'like'} ... /> // Uses the default ('Like')
+<CarmoreIcon icon={'like'} ... /> // Uses the default ('좋아요')
 <CarmoreIcon icon={'like'} aria-label={'Heart'} ... />
 <CarmoreIcon icon={'like'} aria-label={'Empathize'} ... />
 ```

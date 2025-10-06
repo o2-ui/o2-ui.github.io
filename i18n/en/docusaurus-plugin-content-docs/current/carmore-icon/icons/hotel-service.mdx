@@ -1,0 +1,108 @@
+---
+id: hotel-service
+title: HotelService
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# HotelService
+
+<br />
+
+<IconProfile icon={'hotel-service'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'hotel-service'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## Control size
+
+You can control the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings with units such as 'px', 'rem', or '%'.
+  - (The icon keeps its intrinsic aspect ratio and cannot be stretched.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'hotel-service'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'hotel-service'} ... /> // Uses the default ('호텔 서비스')
+<CarmoreIcon icon={'hotel-service'} width={30} height={30} ... />
+<CarmoreIcon icon={'hotel-service'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'hotel-service'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Change color
+
+Set the text color via the `className` prop to recolor the icon.
+
+<ColorPropsCompareList icon={'hotel-service'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'hotel-service'} className={'text-red'} ... />
+<CarmoreIcon icon={'hotel-service'} className={'text-orange'} ... />
+<CarmoreIcon icon={'hotel-service'} className={'text-green'}  ... />
+<CarmoreIcon icon={'hotel-service'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'hotel-service'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+We recommend setting accessibility attributes such as `role` and `aria-label`.
+
+- The default `role` is 'img'.
+- The default `aria-label` is '호텔 서비스'.
+- Accessibility defaults are provided, and you can customize them as needed.
+- _(Hover the icon to see the tooltip.)_
+
+<A11yPropsCompareList icon={'hotel-service'} ariaLabels={[undefined, 'Room service', 'Luggage cart']} />
+
+```tsx
+<CarmoreIcon icon={'hotel-service'} ... /> // Uses the default ('호텔 서비스')
+<CarmoreIcon icon={'hotel-service'} aria-label={'Room service'} ... />
+<CarmoreIcon icon={'hotel-service'} aria-label={'Luggage cart'} ... />
+```

@@ -42,7 +42,7 @@ You can control the icon size with the `width` and `height` props.
 <SizePropsCompareList icon={'arrow-up'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'arrow-up'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'arrow-up'} ... /> // Uses the default ('위로')
 <CarmoreIcon icon={'arrow-up'} width={30} height={30} ... />
 <CarmoreIcon icon={'arrow-up'} width={'48px'} height={'48px'} ... />
 <CarmoreIcon icon={'arrow-up'} width={'5rem'} height={'5rem'} ... />
@@ -95,14 +95,14 @@ Set the text color via the `className` prop to recolor the icon.
 We recommend configuring attributes such as `role` and `aria-label`.
 
 - The default `role` is 'img'.
-- The default `aria-label` is 'Move down'.
+- The default `aria-label` is '위로'.
 - Base accessibility defaults are provided, and you can override them when needed.
 - _(Hover the icon to check the tooltip.)_
 
 <A11yPropsCompareList icon={'arrow-up'} ariaLabels={[undefined, 'Arrow', 'Up arrow']} />
 
 ```tsx
-<CarmoreIcon icon={'arrow-up'} ... /> // Uses the default ('Up')
+<CarmoreIcon icon={'arrow-up'} ... /> // Uses the default ('위로')
 <CarmoreIcon icon={'arrow-up'} aria-label={'Arrow'} ... />
 <CarmoreIcon icon={'arrow-up'} aria-label={'Up arrow'} ... />
 ```
