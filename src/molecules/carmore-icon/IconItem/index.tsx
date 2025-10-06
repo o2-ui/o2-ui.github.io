@@ -18,7 +18,7 @@ const IconItem = (props: Props) => {
 
   return (
     <Link className={style.link} href={href}>
-      <Box className={style.box} padding={'1rem'} bgColor={'gray-10'} hoverEffect>
+      <Box className={style.box} padding={'1rem'} bgColor={'gray-10-a-50'} hoverEffect>
         <CarmoreIcon width={65} height={65} icon={icon} />
         <p className={style.iconLabel}>{icon.toString()}</p>
       </Box>
