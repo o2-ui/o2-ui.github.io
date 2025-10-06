@@ -8,7 +8,7 @@ import style from './style.module.css';
 import PropsListWrapper from '@/molecules/carmore-icon/PropsListWrapper';
 
 interface Props {
-  icon: Extract<IconType, 'arrow-down' | 'arrow-left' | 'arrow-right' | 'arrow-up'>;
+  icon: Extract<IconType, 'arrow-left' | 'arrow-right'>;
 }
 
 const ArrowHalfList = (props: Props) => {

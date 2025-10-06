@@ -6,6 +6,7 @@ title: ArrowUp
 import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
 
 import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ArrowThinList from '@site/src/organisms/carmore-icon/ArrowThinList';
 import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
 import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
 
@@ -25,6 +26,21 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
   <CarmoreIcon icon={'arrow-up'} ... />
 
 // ...
+```
+
+<br />
+<br />
+
+## `thin` Props
+
+아이콘의 stroke 폭을 설정할 수 있습니다.
+
+- `thin` 의 기본값은 false 입니다.
+
+<ArrowThinList icon={'arrow-up'} />
+```tsx
+<CarmoreIcon icon={'arrow-up'} ... /> // 기본값(false) 적용
+<CarmoreIcon icon={'arrow-up'} thin ... />
 ```
 
 <br />
