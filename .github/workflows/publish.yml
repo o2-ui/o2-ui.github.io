@@ -36,13 +36,5 @@ jobs:
           publish_dir: ./build
           publish_branch: gh-pages
 
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: v1.0.${{ github.run_number }}
-          name: Release v1.0.${{ github.run_number }}
-          body: |
-            🚀 Docusaurus 사이트가 자동 배포되었습니다.
-            - 커밋: ${{ github.sha }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
