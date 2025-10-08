@@ -1,0 +1,108 @@
+---
+id: bus
+title: Bus
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# Bus
+
+<br />
+
+<IconProfile icon={'bus'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'bus'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## Control size
+
+You can control the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings with units such as 'px', 'rem', or '%'.
+  - (The icon keeps its intrinsic aspect ratio and cannot be stretched.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'bus'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'bus'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'bus'} width={30} height={30} ... />
+<CarmoreIcon icon={'bus'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'bus'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Change color
+
+Set the text color via the `className` prop to recolor the icon.
+
+<ColorPropsCompareList icon={'bus'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'bus'} className={'text-red'} ... />
+<CarmoreIcon icon={'bus'} className={'text-orange'} ... />
+<CarmoreIcon icon={'bus'} className={'text-green'}  ... />
+<CarmoreIcon icon={'bus'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'bus'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+We recommend configuring attributes such as `role` and `aria-label`.
+
+- The default `role` is 'img'.
+- The default `aria-label` is '버스'.
+- Base accessibility defaults are provided, and you can override them when needed.
+- _(Hover the icon to check the tooltip.)_
+
+<A11yPropsCompareList icon={'bus'} ariaLabels={[undefined, 'Bus', 'Bus operation information']} />
+
+```tsx
+<CarmoreIcon icon={'bus'} ... /> // Uses the default ('버스')
+<CarmoreIcon icon={'bus'} aria-label={'Bus'} ... />
+<CarmoreIcon icon={'bus'} aria-label={'Bus operation information'} ... />
+```
