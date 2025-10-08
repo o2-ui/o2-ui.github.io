@@ -1,0 +1,108 @@
+---
+id: rental-house
+title: RentalHouse
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# RentalHouse
+
+<br />
+
+<IconProfile icon={'rental-house'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'rental-house'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## Control size
+
+You can control the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings with units such as 'px', 'rem', or '%'.
+  - (The icon keeps its intrinsic aspect ratio and cannot be stretched.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'rental-house'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'rental-house'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'rental-house'} width={30} height={30} ... />
+<CarmoreIcon icon={'rental-house'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'rental-house'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Change color
+
+Set the text color via the `className` prop to recolor the icon.
+
+<ColorPropsCompareList icon={'rental-house'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'rental-house'} className={'text-red'} ... />
+<CarmoreIcon icon={'rental-house'} className={'text-orange'} ... />
+<CarmoreIcon icon={'rental-house'} className={'text-green'}  ... />
+<CarmoreIcon icon={'rental-house'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'rental-house'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+We recommend configuring attributes such as `role` and `aria-label`.
+
+- The default `role` is 'img'.
+- The default `aria-label` is '숙소'.
+- Base accessibility defaults are provided, and you can override them when needed.
+- _(Hover the icon to check the tooltip.)_
+
+<A11yPropsCompareList icon={'rental-house'} ariaLabels={[undefined, 'House', 'Rental house']} />
+
+```tsx
+<CarmoreIcon icon={'rental-house'} ... /> // Uses the default ('숙소')
+<CarmoreIcon icon={'rental-house'} aria-label={'House'} ... />
+<CarmoreIcon icon={'rental-house'} aria-label={'Rental house'} ... />
+```
