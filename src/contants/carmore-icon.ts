@@ -9,6 +9,16 @@ type IIconItem = {
 };
 
 const ICON_ITEM_MAP: IIconItem = {
+  // 1.2.1
+  airport: { icon: 'airport', releasedVersion: '1.2.1', detailPath: 'carmore-icon/icons/airport' },
+  anchor: { icon: 'anchor', releasedVersion: '1.2.1', detailPath: 'carmore-icon/icons/anchor' },
+  bus: { icon: 'bus', releasedVersion: '1.2.1', detailPath: 'carmore-icon/icons/bus' },
+  car: { icon: 'car', releasedVersion: '1.2.1', detailPath: 'carmore-icon/icons/car' },
+  'rental-house': { icon: 'rental-house', releasedVersion: '1.2.1', detailPath: 'carmore-icon/icons/rental-house' },
+  station: { icon: 'station', releasedVersion: '1.2.1', detailPath: 'carmore-icon/icons/station' },
+  walk: { icon: 'walk', releasedVersion: '1.2.1', detailPath: 'carmore-icon/icons/walk' },
+  'with-car': { icon: 'with-car', releasedVersion: '1.2.1', detailPath: 'carmore-icon/icons/with-car' },
+
   // 1.1.0
   'arrow-down-ktx': { icon: 'arrow-down-ktx', releasedVersion: '1.1.0', detailPath: 'carmore-icon/icons/arrow-down-ktx' },
   'arrow-left': { icon: 'arrow-left', releasedVersion: '1.1.0', detailPath: 'carmore-icon/icons/arrow-left' },
