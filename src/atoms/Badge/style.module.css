@@ -26,3 +26,8 @@
   background-color: var(--color-primary-car);
   color: var(--color-common-0);
 }
+
+.theme-secondary {
+  background-color: var(--ifm-color-primary-lighter);
+  color: var(--color-common-0);
+}

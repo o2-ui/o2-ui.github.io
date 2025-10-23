@@ -20,7 +20,7 @@ const IconProfile = (props: Props) => {
 
   return (
     <Flex fullWidth alignItems={'flex-end'} direction={'column'} gap={'0.5rem'}>
-      <i className={style['version-label']}>released at: {releasedVersion}</i>
+      <i className={style['version-label']}>released version: {releasedVersion}</i>
       <Box fullWidth padding={'4rem'} bgColor={'gray-10'}>
         <Flex fullWidth alignItems={'center'} justifyContent={'center'}>
           <CarmoreIcon icon={icon} width={'15rem'} height={'15rem'} />

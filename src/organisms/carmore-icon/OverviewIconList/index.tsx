@@ -8,8 +8,8 @@ const OverviewIconList = () => {
   return (
     <Flex fullWidth wrap={'wrap'} gap={'2rem'}>
       {ICON_ITEM_LIST.map((item) => {
-        const { icon, releasedVersion, detailPath } = item;
-        return <IconItem icon={icon} version={releasedVersion} href={`/docs/${detailPath}`} />;
+        const { icon, releasedVersion, updatedVersion, detailPath } = item;
+        return <IconItem icon={icon} releasedVersion={releasedVersion} updatedVersion={updatedVersion} href={`/docs/${detailPath}`} />;
       })}
     </Flex>
   );
