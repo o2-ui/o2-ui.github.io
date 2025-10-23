@@ -1,5 +1,6 @@
 ## Package Scope
 
+- [ ] self
 - [ ] cds
 - [ ] carmore-icon
 
