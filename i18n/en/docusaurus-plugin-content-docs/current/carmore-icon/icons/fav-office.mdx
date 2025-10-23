@@ -1,0 +1,108 @@
+---
+id: fav-office
+title: FavOffice
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# FavOffice
+
+<br />
+
+<IconProfile icon={'fav-office'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'fav-office'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## Size
+
+Adjust the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings that include units such as 'px', 'rem', or '%'.
+  - (The original aspect ratio is fixed and cannot be changed.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'fav-office'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'fav-office'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'fav-office'} width={30} height={30} ... />
+<CarmoreIcon icon={'fav-office'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'fav-office'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Color
+
+Set `className` with a text color to change the icon color.
+
+<ColorPropsCompareList icon={'fav-office'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'fav-office'} className={'text-red'} ... />
+<CarmoreIcon icon={'fav-office'} className={'text-orange'} ... />
+<CarmoreIcon icon={'fav-office'} className={'text-green'}  ... />
+<CarmoreIcon icon={'fav-office'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'fav-office'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+Set attributes such as `role` and `aria-label` for better accessibility.
+
+- The default `role` is 'img'.
+- The default `aria-label` is '회사'.
+- Default accessibility props are provided, and you can customize them as needed.
+- _(Hover over the icon.)_
+
+<A11yPropsCompareList icon={'fav-office'} ariaLabels={[undefined, 'Workplace', 'Office']} />
+
+```tsx
+<CarmoreIcon icon={'fav-office'} ... /> // Uses the default ('회사')
+<CarmoreIcon icon={'fav-office'} aria-label={'Workplace'} ... />
+<CarmoreIcon icon={'fav-office'} aria-label={'Office'} ... />
+```
