@@ -1,0 +1,108 @@
+---
+id: method-credit-card
+title: MethodCreditCard
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# MethodCreditCard
+
+<br />
+
+<IconProfile icon={'method-credit-card'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'method-credit-card'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## Size
+
+Adjust the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings that include units such as 'px', 'rem', or '%'.
+  - (The original aspect ratio is fixed and cannot be changed.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'method-credit-card'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'method-credit-card'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'method-credit-card'} width={30} height={30} ... />
+<CarmoreIcon icon={'method-credit-card'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'method-credit-card'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Color
+
+Set `className` with a text color to change the icon color.
+
+<ColorPropsCompareList icon={'method-credit-card'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'method-credit-card'} className={'text-red'} ... />
+<CarmoreIcon icon={'method-credit-card'} className={'text-orange'} ... />
+<CarmoreIcon icon={'method-credit-card'} className={'text-green'}  ... />
+<CarmoreIcon icon={'method-credit-card'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'method-credit-card'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+Set attributes such as `role` and `aria-label` for better accessibility.
+
+- The default `role` is 'img'.
+- The default `aria-label` is '결제수단'.
+- Default accessibility props are provided, and you can customize them as needed.
+- _(Hover over the icon.)_
+
+<A11yPropsCompareList icon={'method-credit-card'} ariaLabels={[undefined, 'Payment', 'Settlement']} />
+
+```tsx
+<CarmoreIcon icon={'method-credit-card'} ... /> // Uses the default ('결제수단')
+<CarmoreIcon icon={'method-credit-card'} aria-label={'Payment'} ... />
+<CarmoreIcon icon={'method-credit-card'} aria-label={'Settlement'} ... />
+```

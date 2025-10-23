@@ -6,12 +6,14 @@ import style from './style.module.css';
 
 import { mergeClassNames } from '@/utils/string-helper';
 
-type ThemeType = 'default' | 'primary';
+type ThemeType = 'default' | 'primary' | 'secondary';
 
 const getThemeClass = (theme: ThemeType) => {
   switch (theme) {
     case 'primary':
       return style['theme-primary'];
+    case 'secondary':
+      return style['theme-secondary'];
     case 'default':
     default:
       return style['theme-default'];

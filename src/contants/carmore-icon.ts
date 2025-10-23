@@ -3,12 +3,36 @@ import type { IconType } from '@/types/carmore-icon';
 type IIconItem = {
   [I in IconType]: {
     icon: IconType;
-    releasedVersion: string;
     detailPath: string;
+    releasedVersion: string; // 최초 릴리즈 버전
+    updatedVersion?: string; // 최근 업데이트(변경)된 버전
+    deprecatedVersion?: string; // 사용 중단된 버전
   };
 };
 
 const ICON_ITEM_MAP: IIconItem = {
+  // 1.3.0
+  checklist: { icon: 'checklist', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/checklist' },
+  'direction-up': { icon: 'direction-up', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/direction-up' },
+  'error-info': { icon: 'error-info', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/error-info' },
+  ev: { icon: 'ev', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/ev' },
+  'fav-home': { icon: 'fav-home', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/fav-home' },
+  'fav-office': { icon: 'fav-office', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/fav-office' },
+  help: { icon: 'help', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/help' },
+  'method-credit-card': { icon: 'method-credit-card', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/method-credit-card' },
+  'more-info': { icon: 'more-info', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/more-info' },
+  'new-car': { icon: 'new-car', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/new-car' },
+  point: { icon: 'point', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/point' },
+  status: { icon: 'status', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/status' },
+  success: { icon: 'success', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/success' },
+  'tab-alert': { icon: 'tab-alert', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/tab-alert' },
+  'tab-day': { icon: 'tab-day', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/tab-day' },
+  'tab-home': { icon: 'tab-home', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/tab-home' },
+  'tab-hotel': { icon: 'tab-hotel', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/tab-hotel' },
+  'tab-mypage': { icon: 'tab-mypage', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/tab-mypage' },
+  time: { icon: 'time', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/time' },
+  warning: { icon: 'warning', releasedVersion: '1.3.0', detailPath: 'carmore-icon/icons/warning' },
+
   // 1.2.1
   airport: { icon: 'airport', releasedVersion: '1.2.1', detailPath: 'carmore-icon/icons/airport' },
   anchor: { icon: 'anchor', releasedVersion: '1.2.1', detailPath: 'carmore-icon/icons/anchor' },
@@ -28,7 +52,7 @@ const ICON_ITEM_MAP: IIconItem = {
   close: { icon: 'close', releasedVersion: '1.1.0', detailPath: 'carmore-icon/icons/close' },
   edit: { icon: 'edit', releasedVersion: '1.1.0', detailPath: 'carmore-icon/icons/edit' },
   filter: { icon: 'filter', releasedVersion: '1.1.0', detailPath: 'carmore-icon/icons/filter' },
-  global: { icon: 'global', releasedVersion: '1.1.0', detailPath: 'carmore-icon/icons/global' },
+  global: { icon: 'global', releasedVersion: '1.1.0', updatedVersion: '1.3.0', detailPath: 'carmore-icon/icons/global' },
   'hotel-activity': { icon: 'hotel-activity', releasedVersion: '1.1.0', detailPath: 'carmore-icon/icons/hotel-activity' },
   'hotel-business': { icon: 'hotel-business', releasedVersion: '1.1.0', detailPath: 'carmore-icon/icons/hotel-business' },
   'hotel-credit-card': { icon: 'hotel-credit-card', releasedVersion: '1.1.0', detailPath: 'carmore-icon/icons/hotel-credit-card' },

@@ -1,0 +1,108 @@
+---
+id: point
+title: Point
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# Point
+
+<br />
+
+<IconProfile icon={'point'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'point'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## Size
+
+Adjust the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings that include units such as 'px', 'rem', or '%'.
+  - (The original aspect ratio is fixed and cannot be changed.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'point'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'point'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'point'} width={30} height={30} ... />
+<CarmoreIcon icon={'point'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'point'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Color
+
+Set `className` with a text color to change the icon color.
+
+<ColorPropsCompareList icon={'point'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'point'} className={'text-red'} ... />
+<CarmoreIcon icon={'point'} className={'text-orange'} ... />
+<CarmoreIcon icon={'point'} className={'text-green'}  ... />
+<CarmoreIcon icon={'point'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'point'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+Set attributes such as `role` and `aria-label` for better accessibility.
+
+- The default `role` is 'img'.
+- The default `aria-label` is '포인트'.
+- Default accessibility props are provided, and you can customize them as needed.
+- _(Hover over the icon.)_
+
+<A11yPropsCompareList icon={'point'} ariaLabels={[undefined, 'Mileage', 'Reward points']} />
+
+```tsx
+<CarmoreIcon icon={'point'} ... /> // Uses the default ('포인트')
+<CarmoreIcon icon={'point'} aria-label={'Mileage'} ... />
+<CarmoreIcon icon={'point'} aria-label={'Reward points'} ... />
+```
