@@ -40,7 +40,16 @@ type BgColorType =
   | 'gray-40'
   | 'gray-50'
   | 'light-gray-10'
-  | 'light-gray-30';
+  | 'light-gray-30'
+  | 'red-10'
+  | 'red-20'
+  | 'red-30'
+  | 'red-40'
+  | 'red-50'
+  | 'red-60'
+  | 'red-70'
+  | 'red-80'
+  | 'red-90';
 
 const getBgColorClass = (bgColor: BgColorType) => {
   switch (bgColor) {
@@ -76,6 +85,24 @@ const getBgColorClass = (bgColor: BgColorType) => {
       return style['bgLightGray10'];
     case 'light-gray-30':
       return style['bgLightGray30'];
+    case 'red-10':
+      return style['bg-red-10'];
+    case 'red-20':
+      return style['bg-red-20'];
+    case 'red-30':
+      return style['bg-red-30'];
+    case 'red-40':
+      return style['bg-red-40'];
+    case 'red-50':
+      return style['bg-red-50'];
+    case 'red-60':
+      return style['bg-red-60'];
+    case 'red-70':
+      return style['bg-red-70'];
+    case 'red-80':
+      return style['bg-red-80'];
+    case 'red-90':
+      return style['bg-red-90'];
     case 'transparent':
     default:
       return style['bgTransparent'];
