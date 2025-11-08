@@ -23,7 +23,24 @@ const getPaddingClass = (padding?: PaddingType) => {
   }
 };
 
-type BgColorType = 'transparent' | 'gray-10' | 'gray-10-a-10' | 'gray-10-a-20' | 'gray-10-a-30' | 'gray-10-a-40' | 'gray-10-a-50' | 'gray-20' | 'light-gray-10' | 'light-gray-30';
+type BgColorType =
+  | 'transparent'
+  | 'gray-10'
+  | 'gray-10-a-10'
+  | 'gray-10-a-20'
+  | 'gray-10-a-30'
+  | 'gray-10-a-40'
+  | 'gray-10-a-50'
+  | 'gray-10-a-60'
+  | 'gray-10-a-70'
+  | 'gray-10-a-80'
+  | 'gray-10-a-90'
+  | 'gray-20'
+  | 'gray-30'
+  | 'gray-40'
+  | 'gray-50'
+  | 'light-gray-10'
+  | 'light-gray-30';
 
 const getBgColorClass = (bgColor: BgColorType) => {
   switch (bgColor) {
@@ -39,8 +56,22 @@ const getBgColorClass = (bgColor: BgColorType) => {
       return style['bgGray10Alpha40'];
     case 'gray-10-a-50':
       return style['bgGray10Alpha50'];
+    case 'gray-10-a-60':
+      return style['bgGray10Alpha60'];
+    case 'gray-10-a-70':
+      return style['bgGray10Alpha70'];
+    case 'gray-10-a-80':
+      return style['bgGray10Alpha80'];
+    case 'gray-10-a-90':
+      return style['bgGray10Alpha90'];
     case 'gray-20':
       return style['bgGray20'];
+    case 'gray-30':
+      return style['bgGray30'];
+    case 'gray-40':
+      return style['bgGray40'];
+    case 'gray-50':
+      return style['bgGray50'];
     case 'light-gray-10':
       return style['bgLightGray10'];
     case 'light-gray-30':

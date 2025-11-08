@@ -31,3 +31,13 @@
   background-color: var(--ifm-color-primary-lighter);
   color: var(--color-common-0);
 }
+
+.theme-secondary {
+  background-color: var(--ifm-color-primary-lighter);
+  color: var(--color-common-0);
+}
+
+.theme-red {
+  background-color: var(--color-red-50);
+  color: var(--color-common-0);
+}
