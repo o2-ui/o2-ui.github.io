@@ -1,20 +1,20 @@
 ---
-id: hotel-room
-title: HotelRoom
+id: room
+title: Room
 ---
 
-import DeprecatedBoard from '@site/src/molecules/carmore-icon/DeprecatedBoard';
+import UpdateLog from '@site/src/molecules/common/UpdateLog';
 import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
 
 import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
 import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
 import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
 
-# HotelRoom
+# Room
 
 <br />
-<DeprecatedBoard title={'사용 불가 알림'} description={'이 컴포넌트는 더 이상 사용할 수 없습니다. 아래 컴포넌트를 대신 사용해주세요.'} altIcon={'room'} />
-<IconProfile icon={'hotel-room'} />
+
+<IconProfile icon={'room'} />
 
 ## 사용법
 
@@ -23,7 +23,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 
 // ...
 
-  <CarmoreIcon icon={'hotel-room'} ... />
+  <CarmoreIcon icon={'room'} ... />
 
 // ...
 ```
@@ -40,13 +40,13 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 - `width` 의 기본값은 '1.5rem' 입니다.
 - `height` 의 기본값은 '1.5rem' 입니다.
 
-<SizePropsCompareList icon={'hotel-room'} sizes={['1.5rem', 30, '48px', '5rem']} />
+<SizePropsCompareList icon={'room'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'hotel-room'} ... /> // 기본값('1.5rem') 적용
-<CarmoreIcon icon={'hotel-room'} width={30} height={30} ... />
-<CarmoreIcon icon={'hotel-room'} width={'48px'} height={'48px'} ... />
-<CarmoreIcon icon={'hotel-room'} width={'5rem'} height={'5rem'} ... />
+<CarmoreIcon icon={'room'} ... /> // 기본값('1.5rem') 적용
+<CarmoreIcon icon={'room'} width={30} height={30} ... />
+<CarmoreIcon icon={'room'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'room'} width={'5rem'} height={'5rem'} ... />
 ```
 
 <br />
@@ -56,7 +56,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 
 `className`을 통해 텍스트 색상(color)을 지정하면 아이콘의 색상이 변경됩니다.
 
-<ColorPropsCompareList icon={'hotel-room'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+<ColorPropsCompareList icon={'room'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
 
 ```css
 .text-red {
@@ -81,11 +81,11 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 ```
 
 ```tsx
-<CarmoreIcon icon={'hotel-room'} className={'text-red'} ... />
-<CarmoreIcon icon={'hotel-room'} className={'text-orange'} ... />
-<CarmoreIcon icon={'hotel-room'} className={'text-green'}  ... />
-<CarmoreIcon icon={'hotel-room'} className={'text-blue'}  ... />
-<CarmoreIcon icon={'hotel-room'} className={'text-purple'}  ... />
+<CarmoreIcon icon={'room'} className={'text-red'} ... />
+<CarmoreIcon icon={'room'} className={'text-orange'} ... />
+<CarmoreIcon icon={'room'} className={'text-green'}  ... />
+<CarmoreIcon icon={'room'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'room'} className={'text-purple'}  ... />
 ```
 
 <br />
@@ -100,10 +100,21 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 - 기본 접근성 속성이 적용되어 있지만, 필요에 따라 커스터마이징할 수 있습니다.
 - _(아이콘에 마우스를 올려보세요.)_
 
-<A11yPropsCompareList icon={'hotel-room'} ariaLabels={[undefined, '침실', '호텔']} />
+<A11yPropsCompareList icon={'room'} ariaLabels={[undefined, '침실', '호텔']} />
 
 ```tsx
-<CarmoreIcon icon={'hotel-room'} ... /> // 기본값('숙실') 적용
-<CarmoreIcon icon={'hotel-room'} aria-label={'침실'} ... />
-<CarmoreIcon icon={'hotel-room'} aria-label={'호텔'} ... />
+<CarmoreIcon icon={'room'} ... /> // 기본값('숙실') 적용
+<CarmoreIcon icon={'room'} aria-label={'침실'} ... />
+<CarmoreIcon icon={'room'} aria-label={'호텔'} ... />
 ```
+
+## 수정 이력
+
+<UpdateLog
+  logList={[
+    {
+      version: '1.4.0',
+      content: '컴포넌트명 변경: Room -> Room',
+    },
+  ]}
+/>
