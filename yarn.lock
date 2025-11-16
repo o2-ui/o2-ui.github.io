@@ -2153,10 +2153,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@o2-ui/carmore-icon@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@o2-ui/carmore-icon/-/carmore-icon-1.3.0.tgz#40996ae129ad846090f4f96fad49a59782bc837f"
-  integrity sha512-MNKUkwSeBbyZhOAQLR1hpFrW+NN83nnrWsPL+NIffNPEmmjQJOn3dVqQDuTtOZelV47fSPKp/NOxbPkxQSoJwQ==
+"@o2-ui/carmore-icon@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@o2-ui/carmore-icon/-/carmore-icon-1.4.0.tgz#353155ec17e81907786592e239ddfb8a21d9febb"
+  integrity sha512-hXh30niEao0beARNlVQL/QMPpdO4ZSlKuMIx6jWc4BHrK5CmzmIuevJnSWpG/DJdzwLsEbYdgdk6b6dhqPzK4Q==
 
 "@pnpm/config.env-replace@^1.1.0":
   version "1.1.0"

@@ -8,8 +8,9 @@ const OverviewIconList = () => {
   return (
     <Flex fullWidth wrap={'wrap'} gap={'2rem'}>
       {ICON_ITEM_LIST.map((item) => {
-        const { icon, releasedVersion, updatedVersion, detailPath } = item;
-        return <IconItem icon={icon} releasedVersion={releasedVersion} updatedVersion={updatedVersion} href={`/docs/${detailPath}`} />;
+        const { icon, label, releasedVersion, updatedVersion, deprecatedVersion, detailPath } = item;
+        const key = [icon.toString(), label, releasedVersion, updatedVersion, deprecatedVersion].filter(Boolean).join('-');
+        return <IconItem key={key} icon={icon} label={label} releasedVersion={releasedVersion} updatedVersion={updatedVersion} deprecatedVersion={deprecatedVersion} href={`/docs/${detailPath}`} />;
       })}
     </Flex>
   );

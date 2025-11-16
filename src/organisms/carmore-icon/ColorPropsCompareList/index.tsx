@@ -5,6 +5,7 @@ import React from 'react';
 
 import style from './style.module.css';
 
+import { ICON_ITEM_MAP } from '@/contants/carmore-icon';
 import PropsListWrapper from '@/molecules/carmore-icon/PropsListWrapper';
 
 type ColorType = 'red' | 'orange' | 'green' | 'blue' | 'purple';
@@ -27,17 +28,20 @@ const getColorClass = (color: ColorType) => {
 };
 
 interface Props {
-  icon: IconType;
+  icon: IconType | string;
   colors: ColorType[];
 }
 
 const ColorPropsCompareList = (props: Props) => {
   const { icon, colors } = props;
+
+  const { icon: iconName } = ICON_ITEM_MAP[icon];
+
   return (
     <PropsListWrapper>
       {colors.map((color) => {
         const colorClass = getColorClass(color);
-        return <CarmoreIcon className={colorClass} icon={icon} width={60} height={60} />;
+        return <CarmoreIcon className={colorClass} icon={iconName} width={60} height={60} />;
       })}
     </PropsListWrapper>
   );

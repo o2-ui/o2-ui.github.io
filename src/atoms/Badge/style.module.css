@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   color: inherit;
+  text-align: center;
   white-space: nowrap;
   font-size: 0.625rem;
   font-style: normal;
@@ -29,5 +30,15 @@
 
 .theme-secondary {
   background-color: var(--ifm-color-primary-lighter);
+  color: var(--color-common-0);
+}
+
+.theme-secondary {
+  background-color: var(--ifm-color-primary-lighter);
+  color: var(--color-common-0);
+}
+
+.theme-red {
+  background-color: var(--color-red-50);
   color: var(--color-common-0);
 }

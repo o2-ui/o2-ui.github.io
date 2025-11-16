@@ -1,0 +1,108 @@
+---
+id: gear
+title: Gear
+---
+
+import IconProfile from '@site/src/molecules/carmore-icon/IconProfile';
+
+import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsCompareList';
+import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
+import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
+
+# Gear
+
+<br />
+
+<IconProfile icon={'gear'} />
+
+## Usage
+
+```tsx
+import { CarmoreIcon } from '@o2-ui/carmore-icon';
+
+// ...
+
+  <CarmoreIcon icon={'gear'} ... />
+
+// ...
+```
+
+<br />
+<br />
+
+## Size
+
+Adjust the icon size with the `width` and `height` props.
+
+- Pass numbers directly, or strings that include units such as 'px', 'rem', or '%'.
+  - (The original aspect ratio is fixed and cannot be changed.)
+- The default `width` is '1.5rem'.
+- The default `height` is '1.5rem'.
+
+<SizePropsCompareList icon={'gear'} sizes={['1.5rem', 30, '48px', '5rem']} />
+
+```tsx
+<CarmoreIcon icon={'gear'} ... /> // Uses the default ('1.5rem')
+<CarmoreIcon icon={'gear'} width={30} height={30} ... />
+<CarmoreIcon icon={'gear'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'gear'} width={'5rem'} height={'5rem'} ... />
+```
+
+<br />
+<br />
+
+## Color
+
+Set `className` with a text color to change the icon color.
+
+<ColorPropsCompareList icon={'gear'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+
+```css
+.text-red {
+  color: red;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+```
+
+```tsx
+<CarmoreIcon icon={'gear'} className={'text-red'} ... />
+<CarmoreIcon icon={'gear'} className={'text-orange'} ... />
+<CarmoreIcon icon={'gear'} className={'text-green'}  ... />
+<CarmoreIcon icon={'gear'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'gear'} className={'text-purple'}  ... />
+```
+
+<br />
+<br />
+
+## Accessibility (a11y)
+
+We recommend setting accessibility attributes such as `role` and `aria-label`.
+
+- The default `role` is 'img'.
+- The default `aria-label` is '변속장치'.
+- Default accessibility props are provided, and you can customize them as needed.
+- _(Hover over the icon.)_
+
+<A11yPropsCompareList icon={'gear'} ariaLabels={[undefined, 'Gear', 'Automatic transmission']} />
+
+```tsx
+<CarmoreIcon icon={'gear'} ... /> // Uses the default ('변속장치')
+<CarmoreIcon icon={'gear'} aria-label={'Gear'} ... />
+<CarmoreIcon icon={'gear'} aria-label={'Automatic transmission'} ... />
+```

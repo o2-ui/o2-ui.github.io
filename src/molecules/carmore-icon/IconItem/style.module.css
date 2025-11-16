@@ -7,7 +7,6 @@
 
   &:hover {
     transform: scale(102%);
-    color: var(--ifm-color-primary);
     text-decoration: none;
   }
 }
@@ -16,6 +15,7 @@
   margin: 0;
   font-size: 1rem;
   white-space: nowrap;
+  color: var(--color-gray-80);
 }
 
 .box {

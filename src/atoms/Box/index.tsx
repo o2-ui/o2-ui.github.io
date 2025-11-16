@@ -23,7 +23,33 @@ const getPaddingClass = (padding?: PaddingType) => {
   }
 };
 
-type BgColorType = 'transparent' | 'gray-10' | 'gray-10-a-10' | 'gray-10-a-20' | 'gray-10-a-30' | 'gray-10-a-40' | 'gray-10-a-50' | 'gray-20' | 'light-gray-10' | 'light-gray-30';
+type BgColorType =
+  | 'transparent'
+  | 'gray-10'
+  | 'gray-10-a-10'
+  | 'gray-10-a-20'
+  | 'gray-10-a-30'
+  | 'gray-10-a-40'
+  | 'gray-10-a-50'
+  | 'gray-10-a-60'
+  | 'gray-10-a-70'
+  | 'gray-10-a-80'
+  | 'gray-10-a-90'
+  | 'gray-20'
+  | 'gray-30'
+  | 'gray-40'
+  | 'gray-50'
+  | 'light-gray-10'
+  | 'light-gray-30'
+  | 'red-10'
+  | 'red-20'
+  | 'red-30'
+  | 'red-40'
+  | 'red-50'
+  | 'red-60'
+  | 'red-70'
+  | 'red-80'
+  | 'red-90';
 
 const getBgColorClass = (bgColor: BgColorType) => {
   switch (bgColor) {
@@ -39,12 +65,44 @@ const getBgColorClass = (bgColor: BgColorType) => {
       return style['bgGray10Alpha40'];
     case 'gray-10-a-50':
       return style['bgGray10Alpha50'];
+    case 'gray-10-a-60':
+      return style['bgGray10Alpha60'];
+    case 'gray-10-a-70':
+      return style['bgGray10Alpha70'];
+    case 'gray-10-a-80':
+      return style['bgGray10Alpha80'];
+    case 'gray-10-a-90':
+      return style['bgGray10Alpha90'];
     case 'gray-20':
       return style['bgGray20'];
+    case 'gray-30':
+      return style['bgGray30'];
+    case 'gray-40':
+      return style['bgGray40'];
+    case 'gray-50':
+      return style['bgGray50'];
     case 'light-gray-10':
       return style['bgLightGray10'];
     case 'light-gray-30':
       return style['bgLightGray30'];
+    case 'red-10':
+      return style['bg-red-10'];
+    case 'red-20':
+      return style['bg-red-20'];
+    case 'red-30':
+      return style['bg-red-30'];
+    case 'red-40':
+      return style['bg-red-40'];
+    case 'red-50':
+      return style['bg-red-50'];
+    case 'red-60':
+      return style['bg-red-60'];
+    case 'red-70':
+      return style['bg-red-70'];
+    case 'red-80':
+      return style['bg-red-80'];
+    case 'red-90':
+      return style['bg-red-90'];
     case 'transparent':
     default:
       return style['bgTransparent'];
