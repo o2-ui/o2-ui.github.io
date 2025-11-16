@@ -1,6 +1,6 @@
 ---
-id: credit-card
-title: CreditCard
+id: kids
+title: Kids
 ---
 
 import UpdateLog from '@site/src/molecules/common/UpdateLog';
@@ -10,11 +10,11 @@ import A11yPropsCompareList from '@site/src/organisms/carmore-icon/A11yPropsComp
 import ColorPropsCompareList from '@site/src/organisms/carmore-icon/ColorPropsCompareList';
 import SizePropsCompareList from '@site/src/organisms/carmore-icon/SizePropsCompareList';
 
-# CreditCard
+# Kids
 
 <br />
 
-<IconProfile icon={'credit-card'} />
+<IconProfile icon={'kids'} />
 
 ## 사용법
 
@@ -23,7 +23,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 
 // ...
 
-  <CarmoreIcon icon={'credit-card'} ... />
+  <CarmoreIcon icon={'kids'} ... />
 
 // ...
 ```
@@ -40,13 +40,13 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 - `width` 의 기본값은 '1.5rem' 입니다.
 - `height` 의 기본값은 '1.5rem' 입니다.
 
-<SizePropsCompareList icon={'credit-card'} sizes={['1.5rem', 30, '48px', '5rem']} />
+<SizePropsCompareList icon={'kids'} sizes={['1.5rem', 30, '48px', '5rem']} />
 
 ```tsx
-<CarmoreIcon icon={'credit-card'} ... /> // 기본값('1.5rem') 적용
-<CarmoreIcon icon={'credit-card'} width={30} height={30} ... />
-<CarmoreIcon icon={'credit-card'} width={'48px'} height={'48px'} ... />
-<CarmoreIcon icon={'credit-card'} width={'5rem'} height={'5rem'} ... />
+<CarmoreIcon icon={'kids'} ... /> // 기본값('1.5rem') 적용
+<CarmoreIcon icon={'kids'} width={30} height={30} ... />
+<CarmoreIcon icon={'kids'} width={'48px'} height={'48px'} ... />
+<CarmoreIcon icon={'kids'} width={'5rem'} height={'5rem'} ... />
 ```
 
 <br />
@@ -56,7 +56,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 
 `className`을 통해 텍스트 색상(color)을 지정하면 아이콘의 색상이 변경됩니다.
 
-<ColorPropsCompareList icon={'credit-card'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
+<ColorPropsCompareList icon={'kids'} colors={['red', 'orange', 'green', 'blue', 'purple']} />
 
 ```css
 .text-red {
@@ -81,11 +81,11 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 ```
 
 ```tsx
-<CarmoreIcon icon={'credit-card'} className={'text-red'} ... />
-<CarmoreIcon icon={'credit-card'} className={'text-orange'} ... />
-<CarmoreIcon icon={'credit-card'} className={'text-green'}  ... />
-<CarmoreIcon icon={'credit-card'} className={'text-blue'}  ... />
-<CarmoreIcon icon={'credit-card'} className={'text-purple'}  ... />
+<CarmoreIcon icon={'kids'} className={'text-red'} ... />
+<CarmoreIcon icon={'kids'} className={'text-orange'} ... />
+<CarmoreIcon icon={'kids'} className={'text-green'}  ... />
+<CarmoreIcon icon={'kids'} className={'text-blue'}  ... />
+<CarmoreIcon icon={'kids'} className={'text-purple'}  ... />
 ```
 
 <br />
@@ -96,16 +96,16 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
 `role`, `aria-label` 등의 속성을 설정하는 것을 권장합니다.
 
 - `role` 의 기본값은 'img' 입니다.
-- `aria-label` 의 기본값은 '신용카드' 입니다.
+- `aria-label` 의 기본값은 '어린이 놀이시설' 입니다.
 - 기본 접근성 속성이 적용되어 있지만, 필요에 따라 커스터마이징할 수 있습니다.
 - _(아이콘에 마우스를 올려보세요.)_
 
-<A11yPropsCompareList icon={'credit-card'} ariaLabels={[undefined, '결제하기', '카드 결제']} />
+<A11yPropsCompareList icon={'kids'} ariaLabels={[undefined, '키즈존', '놀잇거리']} />
 
 ```tsx
-<CarmoreIcon icon={'credit-card'} ... /> // 기본값('신용카드') 적용
-<CarmoreIcon icon={'credit-card'} aria-label={'결제하기'} ... />
-<CarmoreIcon icon={'credit-card'} aria-label={'카드 결제'} ... />
+<CarmoreIcon icon={'kids'} ... /> // 기본값('어린이 놀이시설') 적용
+<CarmoreIcon icon={'kids'} aria-label={'키즈존'} ... />
+<CarmoreIcon icon={'kids'} aria-label={'놀잇거리'} ... />
 ```
 
 ## 수정 이력
@@ -114,7 +114,7 @@ import { CarmoreIcon } from '@o2-ui/carmore-icon';
   logList={[
     {
       version: '1.4.0',
-      content: '컴포넌트명 변경: HotelCreditCard -> CreditCard',
+      content: '컴포넌트명 변경: HotelKids -> Kids',
     },
   ]}
 />
