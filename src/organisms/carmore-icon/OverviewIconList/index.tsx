@@ -9,7 +9,8 @@ const OverviewIconList = () => {
     <Flex fullWidth wrap={'wrap'} gap={'2rem'}>
       {ICON_ITEM_LIST.map((item) => {
         const { icon, label, releasedVersion, updatedVersion, deprecatedVersion, detailPath } = item;
-        return <IconItem icon={icon} label={label} releasedVersion={releasedVersion} updatedVersion={updatedVersion} deprecatedVersion={deprecatedVersion} href={`/docs/${detailPath}`} />;
+        const key = [icon.toString(), label, releasedVersion, updatedVersion, deprecatedVersion].filter(Boolean).join('-');
+        return <IconItem key={key} icon={icon} label={label} releasedVersion={releasedVersion} updatedVersion={updatedVersion} deprecatedVersion={deprecatedVersion} href={`/docs/${detailPath}`} />;
       })}
     </Flex>
   );
